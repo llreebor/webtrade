@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html class="h-full" lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sign In | WebTrade</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/output.css" />
+	</head>
+
+	<body class="h-full">
+		<div class="wrapper relative flex min-h-full flex-col">
+			<!-- Header -->
+			<header class="fixed top-[34px] left-0 w-full">
+				<div
+					class="mx-auto flex max-w-[1320px] items-center justify-between px-5"
+				>
+					<a href="#"
+						><img class="sm:max-w-[100px]" src="./img/global/logo.svg" alt=""
+					/></a>
+					<h4>Hello Guest</h4>
+				</div>
+			</header>
+			<!-- Main Content -->
+			<main class="flex-auto">
+				<!-- Section SignIn -->
+				<section class="flex h-screen flex-col items-center justify-center">
+					<form autocomplete="off">
+						<h2 class="mb-8 bg-green-gradient bg-clip-text text-transparent">
+							Tournament Trader
+						</h2>
+
+						<label for="email">
+							<input
+								class="input-large"
+								placeholder="Email"
+								name="email"
+								id="email"
+								type="text"
+							/>
+						</label>
+						<label for="password" class="input-label mt-6">
+							<!-- Pswd input -->
+							<input
+								class="input-large"
+								placeholder="Password"
+								name="password"
+								id="password"
+								type="password"
+							/>
+
+							<!-- Pswd Icons -->
+							<button
+								id="toggle-password"
+								class="absolute right-5 top-1/2 h-[18px] w-[18px] -translate-y-1/2"
+							>
+								<img
+									id="pswd-icon-hidden"
+									src="./img/global/password-hidden.svg"
+									alt="icon"
+								/>
+								<img
+									class="hidden"
+									id="pswd-icon-visible"
+									src="./img/global/password-visible.svg"
+									alt="icon"
+								/>
+							</button>
+						</label>
+
+						<div class="mt-5 flex items-center justify-between">
+							<label
+								for="remember"
+								class="flex cursor-pointer items-center gap-2"
+							>
+								<input
+									id="remember"
+									type="checkbox"
+									class="h-6 w-6 rounded-[8px] border-graytext bg-transparent checked:!bg-lightgreen focus:ring-0 focus:ring-offset-0"
+								/>
+								<span class="text-body-s text-graytext">Remember me</span>
+							</label>
+
+							<a
+								class="text-body-s text-graytext transition-colors hover:text-white"
+								href="#"
+								>Forgot password?</a
+							>
+						</div>
+
+						<button class="btn btn-large mt-[30px]" type="submit">
+							Sign In
+						</button>
+					</form>
+
+					<p class="text-body-s mt-6 text-graytext">
+						Don't have an account?
+						<a
+							class="text-lightgreen transition-colors hover:text-lightgreen-hovered"
+							href="#"
+							>Sign Up</a
+						>
+					</p>
+				</section>
+			</main>
+		</div>
+
+		<!-- JS -->
+		<script src="./js/main.js"></script>
+	</body>
+</html>
