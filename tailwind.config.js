@@ -27,12 +27,17 @@ module.exports = {
 				lightred: '#FF5F73',
 				lightgreen: '#69F29F',
 				'lightgreen-hovered': '#2BF87C',
+				'table-border': '#3C4547',
 			},
 			backgroundImage: {
 				'green-text-gradient':
 					'linear-gradient(175deg, #69F29F 4.1%, #FFF 72.96%)',
 				'menu-item-gradient':
 					'linear-gradient(270deg, rgba(255, 255, 255, 0.08) -11.06%, rgba(255, 255, 255, 0.00) 100%)',
+				'red-gradient':
+					'linear-gradient(90deg, rgba(255, 95, 115, 0.00) -5.72%, #FF5F73 30.43%, rgba(255, 95, 115, 0.00) 70.26%)',
+				'green-gradient':
+					'linear-gradient(90deg, rgba(106, 244, 160, 0.00) -5.72%, #69F29F 30.43%, rgba(106, 244, 160, 0.00) 70.26%)',
 			},
 			keyframes: {
 				'fade-in': {
