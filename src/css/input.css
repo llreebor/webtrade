@@ -30,13 +30,13 @@
 
 @layer components {
 	/* Text */
-	.text-body-l {
+	.text-body-lg {
 		@apply text-xl leading-[24px];
 	}
-	.text-body-l-medium {
+	.text-body-lg-medium {
 		@apply text-xl font-medium leading-[24px];
 	}
-	.text-body-l-bold {
+	.text-body-lg-bold {
 		@apply text-xl font-bold leading-[24px];
 	}
 	.text-body-m {

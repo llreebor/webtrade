@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Sign In | WebTrade</title>
+		<title>Trade | WebTrade</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -15,98 +15,273 @@
 	</head>
 
 	<body class="h-full">
-		<div class="wrapper relative flex min-h-full flex-col">
-			<!-- Header -->
-			<header class="fixed top-[34px] left-0 w-full">
-				<div
-					class="mx-auto flex max-w-[1320px] items-center justify-between px-5"
-				>
-					<a href="#"
-						><img class="sm:max-w-[100px]" src="./img/global/logo.svg" alt=""
-					/></a>
-					<h4>Hello Guest</h4>
-				</div>
-			</header>
-			<!-- Main Content -->
-			<main class="flex-auto">
-				<!-- Section SignIn -->
-				<section class="flex h-screen flex-col items-center justify-center">
-					<form autocomplete="off" class="w-full max-w-[356px]">
-						<h2 class="mb-8 bg-green-gradient bg-clip-text text-transparent">
-							Tournament Trader
-						</h2>
-
-						<label for="email">
-							<input
-								class="input-large"
-								placeholder="Email"
-								name="email"
-								id="email"
-								type="text"
-							/>
-						</label>
-						<label for="password" class="input-label mt-6">
-							<!-- Pswd input -->
-							<input
-								class="input-large"
-								placeholder="Password"
-								name="password"
-								id="password"
-								type="password"
-							/>
-
-							<!-- Pswd Icons -->
-							<button
-								id="toggle-password"
-								class="absolute right-5 top-1/2 h-[18px] w-[18px] -translate-y-1/2"
-							>
-								<img
-									id="pswd-icon-hidden"
-									src="./img/global/password-hidden.svg"
-									alt="icon"
-								/>
-								<img
-									class="hidden"
-									id="pswd-icon-visible"
-									src="./img/global/password-visible.svg"
-									alt="icon"
-								/>
-							</button>
-						</label>
-
-						<div class="mt-5 flex items-center justify-between">
-							<label
-								for="remember"
-								class="flex cursor-pointer items-center gap-2"
-							>
-								<input
-									id="remember"
-									type="checkbox"
-									class="h-6 w-6 rounded-[8px] border-graytext bg-transparent checked:!bg-lightgreen focus:ring-0 focus:ring-offset-0"
-								/>
-								<span class="text-body-s text-graytext">Remember me</span>
-							</label>
-
-							<a
-								class="text-body-s text-graytext transition-colors hover:text-white"
-								href="#"
-								>Forgot password?</a
-							>
-						</div>
-
-						<button class="btn btn-large mt-[30px]" type="submit">
-							Sign In
-						</button>
-					</form>
-
-					<p class="text-body-s mt-6 text-graytext">
-						Don't have an account?
+		<div class="wrapper relative flex min-h-full gap-12">
+			<!-- Sidebar -->
+			<aside class="h-auto w-[240px] pt-6 pl-8">
+				<a href="#"><img src="./img/global/logo.svg" alt="logo" /></a>
+				<!-- Menu -->
+				<ul class="mt-10 gap-0">
+					<li class="group">
 						<a
-							class="text-lightgreen transition-colors hover:text-lightgreen-hovered"
+							class="text-body-m group flex items-center gap-[14px] py-3 text-graytext group-[.active]:rounded-lg group-[.active]:bg-menu-item-gradient"
 							href="#"
-							>Sign Up</a
 						>
-					</p>
+							<svg
+								width="18"
+								height="18"
+								viewBox="0 0 18 18"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M12.771 0H9.67505V5.4V6.075V10.575H18V6.075V5.4V5.229C18 1.953 16.047 0 12.771 0Z"
+									fill="#A3A7A9"
+									class="transition-colors group-hover:fill-lightgreen group-[.active]:fill-lightgreen"
+								/>
+								<path
+									d="M0 7.42505V11.925V12.375V12.771C0 16.047 1.953 18 5.229 18H8.325V12.375V11.925V7.42505H0Z"
+									fill="#A3A7A9"
+									class="transition-colors group-hover:fill-lightgreen group-[.active]:fill-lightgreen"
+								/>
+								<path
+									d="M8.325 0V6.075H0V5.229C0 1.953 1.953 0 5.229 0H8.325Z"
+									fill="#A3A7A9"
+									class="transition-colors group-hover:fill-lightgreen group-[.active]:fill-lightgreen"
+								/>
+								<path
+									d="M18 11.925V12.771C18 16.047 16.047 18 12.771 18H9.67505V11.925H18Z"
+									fill="#A3A7A9"
+									class="transition-colors group-hover:fill-lightgreen group-[.active]:fill-lightgreen"
+								/>
+							</svg>
+
+							<span
+								class="transition-colors group-hover:text-white group-[.active]:text-white"
+							>
+								Dashboard
+							</span>
+						</a>
+					</li>
+					<li class="active group">
+						<a
+							class="text-body-m group flex items-center gap-[14px] py-3 text-graytext group-[.active]:rounded-lg group-[.active]:bg-menu-item-gradient"
+							href="#"
+						>
+							<svg
+								width="20"
+								height="18"
+								viewBox="0 0 20 18"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M19.9999 5.22896V9.44993H16.3279C16.2199 9.44093 15.9859 9.30593 15.9319 9.20693L14.9959 7.43395C14.6269 6.73195 13.9879 6.33595 13.3039 6.37195C12.6199 6.40795 12.0349 6.86695 11.7379 7.61394L10.4959 10.7279L10.3159 10.2599C9.87494 9.11693 8.61495 8.25294 7.37296 8.25294L2 8.27994V5.22896C2 1.95299 3.95299 0 7.22896 0H14.7709C18.0469 0 19.9999 1.95299 19.9999 5.22896Z"
+									fill="#A3A7A9"
+									class="transition-colors group-hover:fill-lightgreen group-[.active]:fill-lightgreen"
+								/>
+								<path
+									d="M19.9999 12.7711V10.8002H16.3279C15.7249 10.8002 15.0139 10.3682 14.7349 9.83716L13.7989 8.06418C13.5469 7.58718 13.1869 7.61418 12.9889 8.10918L10.9189 13.3381C10.6939 13.9231 10.3159 13.9231 10.0819 13.3381L9.05595 10.7462C8.81295 10.1162 8.05696 9.60317 7.38196 9.60317L2 9.63017V12.7711C2 15.9931 3.88999 17.9371 7.06696 17.9911C7.16596 18.0001 7.27396 18.0001 7.37296 18.0001H14.5729C14.7079 18.0001 14.8429 18.0001 14.9689 17.9911C18.1279 17.9191 19.9999 15.9841 19.9999 12.7711Z"
+									fill="#A3A7A9"
+									class="transition-colors group-hover:fill-lightgreen group-[.active]:fill-lightgreen"
+								/>
+								<path
+									d="M0.999971 9.69995V13.01C0.979971 12.69 0.969971 12.35 0.969971 12V9.69995H0.999971Z"
+									fill="white"
+									fill-opacity="0.6"
+								/>
+							</svg>
+
+							<span
+								class="transition-colors group-hover:text-white group-[.active]:text-white"
+							>
+								Trade
+							</span>
+						</a>
+					</li>
+					<li class="group">
+						<a
+							class="text-body-m group flex items-center gap-[14px] py-3 text-graytext group-[.active]:rounded-lg group-[.active]:bg-menu-item-gradient"
+							href="#"
+						>
+							<svg
+								width="18"
+								height="18"
+								viewBox="0 0 18 18"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M17.3721 16.7441H0.627907C0.284651 16.7441 0 16.4594 0 16.1162C0 15.7729 0.284651 15.4883 0.627907 15.4883H17.3721C17.7153 15.4883 18 15.7729 18 16.1162C18 16.4594 17.7153 16.7441 17.3721 16.7441Z"
+									fill="#A3A7A9"
+									class="transition-colors group-hover:fill-lightgreen group-[.active]:fill-lightgreen"
+								/>
+								<path
+									d="M7.11633 1.67442V16.7442H10.8838V1.67442C10.8838 0.753488 10.507 0 9.3768 0H8.62331C7.49308 0 7.11633 0.753488 7.11633 1.67442Z"
+									fill="#A3A7A9"
+									class="transition-colors group-hover:fill-lightgreen group-[.active]:fill-lightgreen"
+								/>
+								<path
+									d="M1.46509 6.69761V16.7441H4.81393V6.69761C4.81393 5.77668 4.47904 5.02319 3.47439 5.02319H2.80462C1.79997 5.02319 1.46509 5.77668 1.46509 6.69761Z"
+									fill="#A3A7A9"
+									class="transition-colors group-hover:fill-lightgreen group-[.active]:fill-lightgreen"
+								/>
+								<path
+									d="M13.186 10.8836V16.7441H16.5349V10.8836C16.5349 9.96272 16.2 9.20923 15.1953 9.20923H14.5256C13.5209 9.20923 13.186 9.96272 13.186 10.8836Z"
+									fill="#A3A7A9"
+									class="transition-colors group-hover:fill-lightgreen group-[.active]:fill-lightgreen"
+								/>
+							</svg>
+
+							<span
+								class="transition-colors group-hover:text-white group-[.active]:text-white"
+							>
+								Analytics
+							</span>
+						</a>
+					</li>
+					<li class="group">
+						<a
+							class="text-body-m group flex items-center gap-[14px] py-3 text-graytext group-[.active]:rounded-lg group-[.active]:bg-menu-item-gradient"
+							href="#"
+						>
+							<svg
+								width="18"
+								height="18"
+								viewBox="0 0 18 18"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M16.2819 5.99653C14.6537 5.99653 13.988 4.84385 14.7976 3.43002C15.2654 2.61054 14.9865 1.56593 14.1679 1.09766L12.6117 0.206132C11.901 -0.217116 10.9835 0.0350318 10.5607 0.746449L10.4618 0.91755C9.65217 2.33138 8.32084 2.33138 7.50225 0.91755L7.4033 0.746449C6.9985 0.0350318 6.08096 -0.217116 5.37031 0.206132L3.81409 1.09766C2.9955 1.56593 2.71664 2.61955 3.18441 3.43903C4.003 4.84385 3.33733 5.99653 1.70915 5.99653C0.773613 5.99653 0 6.76198 0 7.70753V9.29247C0 10.229 0.764618 11.0035 1.70915 11.0035C3.33733 11.0035 4.003 12.1561 3.18441 13.57C2.71664 14.3895 2.9955 15.4341 3.81409 15.9023L5.37031 16.7939C6.08096 17.2171 6.9985 16.965 7.42129 16.2536L7.52024 16.0825C8.32983 14.6686 9.66117 14.6686 10.4798 16.0825L10.5787 16.2536C11.0015 16.965 11.919 17.2171 12.6297 16.7939L14.1859 15.9023C15.0045 15.4341 15.2834 14.3805 14.8156 13.57C13.997 12.1561 14.6627 11.0035 16.2909 11.0035C17.2264 11.0035 18 10.238 18 9.29247V7.70753C17.991 6.77099 17.2264 5.99653 16.2819 5.99653ZM8.9955 11.4267C7.38531 11.4267 6.07196 10.1119 6.07196 8.5C6.07196 6.88805 7.38531 5.57328 8.9955 5.57328C10.6057 5.57328 11.919 6.88805 11.919 8.5C11.919 10.1119 10.6057 11.4267 8.9955 11.4267Z"
+									fill="#A3A7A9"
+									class="transition-colors group-hover:fill-lightgreen group-[.active]:fill-lightgreen"
+								/>
+							</svg>
+
+							<span
+								class="transition-colors group-hover:text-white group-[.active]:text-white"
+							>
+								Setting
+							</span>
+						</a>
+					</li>
+					<li class="group">
+						<a
+							class="text-body-m group flex items-center gap-[14px] py-3 text-graytext group-[.active]:rounded-lg group-[.active]:bg-menu-item-gradient"
+							href="#"
+						>
+							<svg
+								width="18"
+								height="18"
+								viewBox="0 0 18 18"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M4.97702 9.00011C4.97702 8.43289 5.09727 7.89281 5.31231 7.40027C5.50673 6.95494 5.47329 6.41836 5.12969 6.07476L2.9456 3.89067C2.53554 3.48061 1.85884 3.50203 1.5336 3.98214C0.562414 5.41575 0 7.14304 0 9.00011C0 10.8556 0.561436 12.5815 1.52595 14.0143C1.85022 14.4961 2.52794 14.5191 2.93908 14.109L5.12816 11.9255C5.47254 11.582 5.50637 11.0448 5.31187 10.599C5.09711 10.1067 4.97702 9.56695 4.97702 9.00011Z"
+									fill="#A3A7A9"
+									class="transition-colors group-hover:fill-lightgreen group-[.active]:fill-lightgreen"
+								/>
+								<path
+									d="M9.02726 4.95002C9.59449 4.95002 10.1346 5.07027 10.6271 5.28531C11.0724 5.47973 11.609 5.44629 11.9526 5.10269L14.1119 2.94344C14.5211 2.53418 14.5008 1.85899 14.0221 1.53361C12.5934 0.56242 10.8648 0 9.00026 0C7.14501 0 5.42546 0.561312 3.99481 1.52563C3.51328 1.8502 3.49028 2.52794 3.90037 2.93908L6.06946 5.1137C6.41536 5.46049 6.95722 5.49217 7.40504 5.29376C7.90127 5.07391 8.44878 4.95002 9.02726 4.95002Z"
+									fill="#A3A7A9"
+									class="transition-colors group-hover:fill-lightgreen group-[.active]:fill-lightgreen"
+								/>
+								<path
+									d="M16.1607 3.5582C15.9843 3.32752 15.6468 3.31563 15.4412 3.52067L12.6124 6.34223C12.439 6.51518 12.4195 6.78676 12.5412 6.99925C12.8796 7.58971 13.0768 8.27027 13.0768 9.00014C13.0768 9.73021 12.8794 10.4109 12.5409 11.0015C12.4193 11.2138 12.4387 11.485 12.6117 11.658L15.4412 14.4876C15.6467 14.6931 15.9846 14.6814 16.161 14.4505C17.3159 12.938 17.9998 11.048 17.9998 9.00014C17.9998 6.9521 17.3158 5.06942 16.1607 3.5582Z"
+									fill="#A3A7A9"
+									class="transition-colors group-hover:fill-lightgreen group-[.active]:fill-lightgreen"
+								/>
+								<path
+									d="M9.02577 13.0499C8.2957 13.0499 7.61497 12.8526 7.02439 12.5141C6.81213 12.3924 6.54086 12.4118 6.36786 12.5848L3.51128 15.4414C3.30579 15.6469 3.31748 15.9848 3.54845 16.1611C5.06089 17.316 6.95091 17.9999 8.99877 17.9999C11.0559 17.9999 12.9476 17.3153 14.4536 16.1524C14.6826 15.9756 14.6932 15.6393 14.4886 15.4347L11.6539 12.6001C11.4821 12.4283 11.2132 12.4079 11.0015 12.5272C10.4134 12.8586 9.74118 13.0499 9.02577 13.0499Z"
+									fill="#A3A7A9"
+									class="transition-colors group-hover:fill-lightgreen group-[.active]:fill-lightgreen"
+								/>
+							</svg>
+
+							<span
+								class="transition-colors group-hover:text-white group-[.active]:text-white"
+							>
+								Support
+							</span>
+						</a>
+					</li>
+				</ul>
+			</aside>
+			<!-- Content -->
+			<main class="min-h-screen w-full">
+				<!-- Head -->
+				<section class="mt-6">
+					<div class="flex justify-between">
+						<p class="text-body-lg-m">Tournaments:</p>
+					</div>
+
+					<div class="border-b border-b-[#3C4547] py-[18px]">s</div>
+				</section>
+				<!-- Grid -->
+				<section class="mt-6 w-full columns-3 space-y-4">
+					<div class="break-inside-avoid bg-blue-300">
+						<ul>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+						</ul>
+					</div>
+					<div class="break-inside-avoid bg-red-400">
+						<ul>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+						</ul>
+					</div>
+					<div class="break-inside-avoid bg-green-400">
+						<ul>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+						</ul>
+					</div>
+					<div class="break-inside-avoid bg-pink-400">
+						<ul>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+						</ul>
+					</div>
+					<div class="break-inside-avoid bg-orange-300">
+						<ul>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+						</ul>
+					</div>
 				</section>
 			</main>
 		</div>

@@ -29,7 +29,10 @@ module.exports = {
 				'lightgreen-hovered': '#2BF87C',
 			},
 			backgroundImage: {
-				'green-gradient': 'linear-gradient(175deg, #69F29F 4.1%, #FFF 72.96%)',
+				'green-text-gradient':
+					'linear-gradient(175deg, #69F29F 4.1%, #FFF 72.96%)',
+				'menu-item-gradient':
+					'linear-gradient(270deg, rgba(255, 255, 255, 0.08) -11.06%, rgba(255, 255, 255, 0.00) 100%)',
 			},
 			keyframes: {
 				'fade-in': {
