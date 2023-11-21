@@ -113,10 +113,9 @@
 		@apply relative;
 	}
 	.live-row.low {
-		@apply after:absolute after:top-0 after:left-[0px] after:h-full after:w-full after:rotate-180 after:bg-red-gradient  after:opacity-10;
+		/* @apply bg-green-gradient; */
 	}
 	.live-row.high {
-		@apply after:absolute after:top-0 after:left-[0px] after:h-full after:w-full after:rotate-180 after:bg-green-gradient  after:opacity-10;
 	}
 }
 
