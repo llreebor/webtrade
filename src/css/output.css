@@ -1195,16 +1195,16 @@ h5 {
   margin-top: 1.5rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .mt-\[30px\] {
   margin-top: 30px;
 }
 
 .mt-auto {
   margin-top: auto;
-}
-
-.mt-8 {
-  margin-top: 2rem;
 }
 
 .block {
@@ -1279,6 +1279,10 @@ h5 {
   height: 1px;
 }
 
+.h-\[28px\] {
+  height: 28px;
+}
+
 .h-\[2px\] {
   height: 2px;
 }
@@ -1313,10 +1317,6 @@ h5 {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[28px\] {
-  height: 28px;
 }
 
 .max-h-\[284px\] {
@@ -1371,6 +1371,10 @@ h5 {
   width: 240px;
 }
 
+.w-\[28px\] {
+  width: 28px;
+}
+
 .w-\[30px\] {
   width: 30px;
 }
@@ -1397,10 +1401,6 @@ h5 {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[28px\] {
-  width: 28px;
 }
 
 .min-w-max {
@@ -1922,6 +1922,11 @@ h5 {
   padding-right: 10px;
 }
 
+.px-\[14px\] {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -1952,6 +1957,11 @@ h5 {
   padding-bottom: 1rem;
 }
 
+.py-\[10px\] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .py-\[18px\] {
   padding-top: 18px;
   padding-bottom: 18px;
@@ -1965,16 +1975,6 @@ h5 {
 .py-\[5px\] {
   padding-top: 5px;
   padding-bottom: 5px;
-}
-
-.px-\[14px\] {
-  padding-left: 14px;
-  padding-right: 14px;
-}
-
-.py-\[10px\] {
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .pb-10 {
@@ -2013,6 +2013,10 @@ h5 {
   padding-right: 2rem;
 }
 
+.pr-\[6px\] {
+  padding-right: 6px;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
@@ -2027,10 +2031,6 @@ h5 {
 
 .pt-\[52px\] {
   padding-top: 52px;
-}
-
-.pr-\[6px\] {
-  padding-right: 6px;
 }
 
 .text-left {
