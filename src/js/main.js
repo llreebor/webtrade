@@ -1,22 +1,74 @@
+// Toggle Password Visibility
 function togglePasswordVisibility() {
-	const passwordInput = document.getElementById('password')
-	const togglePasswordButton = document.getElementById('toggle-password')
-	const iconVisible = document.getElementById('pswd-icon-visible')
-	const iconHidden = document.getElementById('pswd-icon-hidden')
+	const passwordInput = document.querySelectorAll('.password-input')
+	const togglePasswordButtons = document.querySelectorAll(
+		'.toggle-password-btn'
+	)
+	const iconsVisible = document.querySelectorAll('.pswd-icon-visible')
+	const iconsHidden = document.querySelectorAll('.pswd-icon-hidden')
 
-	togglePasswordButton.addEventListener('click', (e) => {
-		e.preventDefault()
-		if (passwordInput.type === 'password') {
-			passwordInput.type = 'text'
-			iconVisible.style.display = 'block'
-			iconHidden.style.display = 'none'
-		} else {
-			passwordInput.type = 'password'
-			iconVisible.style.display = 'none'
-			iconHidden.style.display = 'block'
-		}
+	togglePasswordButtons.forEach((toggleBtn, idx) => {
+		toggleBtn.addEventListener('click', (e) => {
+			e.preventDefault()
+			if (passwordInput[idx].type === 'password') {
+				passwordInput[idx].type = 'text'
+				iconsVisible[idx].style.display = 'block'
+				iconsHidden[idx].style.display = 'none'
+			} else {
+				passwordInput[idx].type = 'password'
+				iconsVisible[idx].style.display = 'none'
+				iconsHidden[idx].style.display = 'block'
+			}
+		})
 	})
 }
+
 if (document.getElementById('password')) {
 	togglePasswordVisibility()
+}
+
+// Modals
+function toggleModal(btnId, modalId, closeBtnId) {
+	const modal = document.getElementById(modalId)
+	const btn = document.getElementById(btnId)
+	const close = document.getElementById(closeBtnId)
+	const body = document.querySelector('body')
+
+	btn.addEventListener('click', () => {
+		modal.classList.toggle('hidden')
+		modal.classList.toggle('flex')
+		body.classList.toggle('overflow-hidden')
+		body.classList.toggle('pr-[6px]')
+	})
+
+	modal.addEventListener('click', (e) => {
+		if (e.target === modal) {
+			modal.classList.toggle('hidden')
+			body.classList.toggle('pr-[6px]')
+			modal.classList.toggle('flex')
+			body.classList.toggle('overflow-hidden')
+		}
+	})
+
+	close.addEventListener('click', () => {
+		modal.classList.toggle('hidden')
+		modal.classList.toggle('flex')
+		body.classList.toggle('pr-[6px]')
+		body.classList.toggle('overflow-hidden')
+	})
+}
+if (document.querySelector('.modal')) {
+	// Tournament Modal
+	toggleModal(
+		'create-tournament-btn',
+		'create-tournament-modal',
+		'create-tournament-close-btn'
+	)
+
+	// Account Setting Modal
+	toggleModal(
+		'account-settings-btn',
+		'account-settings-modal',
+		'account-settings-close-btn'
+	)
 }

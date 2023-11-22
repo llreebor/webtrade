@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+	scrollbar-gutter: stable !important;
+}
+
 @layer base {
 	body {
 		@apply relative bg-main-black font-archivo text-white;
@@ -80,13 +85,25 @@
 	.btn {
 		@apply flex w-full items-center justify-center rounded-[8px] bg-lightgreen text-main-black transition-colors hover:bg-lightgreen-hovered;
 	}
+	.btn-large {
+		@apply text-body-m py-4;
+	}
+	.btn-small {
+		@apply text-body-s-medium p-[9px];
+	}
+	.btn-reset {
+		@apply bg-lightblue transition-colors hover:bg-lightblue-hovered;
+	}
 
 	/* Form Items */
 	.input-label {
-		@apply relative flex w-full flex-col;
+		@apply relative flex w-full flex-col gap-1;
 	}
 	.input-large {
 		@apply text-body-m w-full rounded-[8px] border-[#3C4547] bg-transparent py-[15px] px-5 placeholder:text-graytext focus:border-lightgreen focus:ring-0 focus:ring-offset-0;
+	}
+	.input-small {
+		@apply text-body-s w-full rounded-[8px] border-[#3C4547] bg-transparent py-2 px-3 placeholder:text-graytext focus:border-lightgreen focus:ring-0 focus:ring-offset-0;
 	}
 
 	/* Market Status */
@@ -102,7 +119,7 @@
 
 	/* Tournament-Button */
 	.tournament-button {
-		@apply text-body-xs-medium flex max-w-fit items-center justify-center gap-2 rounded-lg border border-transparent bg-darkgray p-3 uppercase hover:border-lightgreen;
+		@apply text-body-xs-medium sm:text-body-x flex max-w-fit items-center justify-center gap-2 rounded-lg border border-transparent bg-darkgray p-3 uppercase hover:border-lightgreen sm:p-2;
 	}
 	.tournament-button.active {
 		@apply border-lightgreen;
@@ -120,9 +137,6 @@
 }
 
 @layer utilities {
-	.btn-large {
-		@apply text-body-m py-4;
-	}
 }
 /* Table */
 table tr td:last-child {
@@ -141,6 +155,7 @@ table tr td:first-child {
 /* Track */
 ::-webkit-scrollbar-track {
 	background: #2c3638;
+	border-radius: 100px;
 }
 
 /* Handle */

@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Trade | WebTrade</title>
+		<title>Admin Trade | OOFTrade</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -17,8 +17,19 @@
 	<body class="h-full">
 		<div class="wrapper relative flex min-h-full">
 			<!-- Sidebar -->
-			<aside class="h-auto w-[240px] pt-6 pl-8">
+			<aside class="h-auto w-[240px] pt-6 pl-8 sm:w-[150px] sm:p-3 sm:pt-6">
 				<a href="#"><img src="./img/global/logo.svg" alt="logo" /></a>
+				<button
+					id="account-settings-btn"
+					class="mt-8 flex w-full items-center gap-3 rounded-lg border border-graytext py-[10px] px-[14px] transition-colors hover:border-lightgreen"
+				>
+					<img
+						class="h-[28px] w-[28px]"
+						src="./img/global/account-avatar.svg"
+						alt="icon"
+					/>
+					<p class="text-body-s-medium">Admin</p>
+				</button>
 				<!-- Menu -->
 				<ul class="mt-10 gap-0">
 					<li class="group">
@@ -56,7 +67,7 @@
 							</svg>
 
 							<span
-								class="transition-colors group-hover:text-white group-[.active]:text-white"
+								class="transition-colors group-hover:text-white group-[.active]:text-white sm:hidden"
 							>
 								Dashboard
 							</span>
@@ -92,7 +103,7 @@
 							</svg>
 
 							<span
-								class="transition-colors group-hover:text-white group-[.active]:text-white"
+								class="transition-colors group-hover:text-white group-[.active]:text-white sm:hidden"
 							>
 								Trade
 							</span>
@@ -133,7 +144,7 @@
 							</svg>
 
 							<span
-								class="transition-colors group-hover:text-white group-[.active]:text-white"
+								class="transition-colors group-hover:text-white group-[.active]:text-white sm:hidden"
 							>
 								Analytics
 							</span>
@@ -159,7 +170,7 @@
 							</svg>
 
 							<span
-								class="transition-colors group-hover:text-white group-[.active]:text-white"
+								class="transition-colors group-hover:text-white group-[.active]:text-white sm:hidden"
 							>
 								Setting
 							</span>
@@ -200,7 +211,7 @@
 							</svg>
 
 							<span
-								class="transition-colors group-hover:text-white group-[.active]:text-white"
+								class="transition-colors group-hover:text-white group-[.active]:text-white sm:hidden"
 							>
 								Support
 							</span>
@@ -209,31 +220,46 @@
 				</ul>
 			</aside>
 			<!-- Content -->
-			<main class="mx-12 h-screen w-full">
+			<main class="mx-12 h-screen w-full sm:mx-5">
 				<!-- Head -->
 				<section class="mt-6">
-					<div class="flex items-center justify-between">
+					<div
+						class="flex items-center justify-between sm:flex-col-reverse sm:gap-2"
+					>
 						<p class="text-body-lg-m">Tournaments:</p>
 						<!-- Toggle .open & .closed class -->
 						<p class="market-status closed">Market Closed</p>
 					</div>
 
-					<div class="border-b border-b-[#3C4547] py-[18px]">
-						<div class="flex gap-4">
+					<div class="border-b border-b-[#3C4547] py-[18px] sm:py-2">
+						<div class="flex gap-4 sm:flex-wrap sm:gap-1">
 							<button class="tournament-button active">
-								<img src="./img/global/world-cup.png" alt="img" />
+								<img
+									class="sm:h-5 sm:w-5"
+									src="./img/global/world-cup.png"
+									alt="img"
+								/>
 								<span>World Cup (M)</span>
 							</button>
 							<button class="tournament-button">
-								<img src="./img/global/world-cup.png" alt="img" />
+								<img
+									class="sm:h-5 sm:w-5"
+									src="./img/global/world-cup.png"
+									alt="img"
+								/>
 								<span>World Cup (W)</span>
 							</button>
 							<button class="tournament-button">
-								<img src="./img/global/wimbledon.png" alt="img" />
+								<img
+									class="sm:h-5 sm:w-5"
+									src="./img/global/wimbledon.png"
+									alt="img"
+								/>
 								<span>Wimbledon (M)</span>
 							</button>
 							<button
-								class="ml-auto flex h-[54px] w-[54px] items-center justify-center rounded-lg border border-transparent bg-darkgray p-[18px] text-xl hover:border-lightgreen"
+								id="create-tournament-btn"
+								class="ml-auto flex h-[54px] w-[54px] items-center justify-center rounded-lg border border-transparent bg-darkgray p-[18px] text-xl hover:border-lightgreen sm:h-5 sm:w-5"
 							>
 								<span>+</span>
 							</button>
@@ -242,7 +268,9 @@
 				</section>
 
 				<!-- Grid -->
-				<section class="mt-4 grid grid-cols-3 gap-4 pb-10">
+				<section
+					class="mt-4 grid grid-cols-3 gap-4 pb-10 lg:grid-cols-2 sm:grid-cols-1"
+				>
 					<div class="flex flex-col">
 						<div class="rounded-lg bg-darkgray p-2">
 							<ul>
@@ -411,19 +439,43 @@
 					</div>
 					<div class="flex flex-col gap-4">
 						<!-- Settlement -->
-
 						<div class="rounded-lg bg-darkgray py-4 px-6">
 							<p class="text-body-lg-m pb-3 text-left">Settlement</p>
-							<ul>
-								<li>1</li>
-								<li>2</li>
-								<li>3</li>
-								<li>2</li>
-								<li>3</li>
-								<li>4</li>
-								<li>5</li>
-							</ul>
+							<form>
+								<div class="grid grid-cols-3 gap-[2px]">
+									<div class="col-span-2 grid">
+										<label class="input-label" for="team">
+											<p class="text-body-xs text-graytext">Team/Player</p>
+											<select
+												id="team"
+												name="team"
+												class="input-small rounded-tr-none rounded-br-none bg-[length:24px]"
+											>
+												<option value="us" selected>United State</option>
+												<option value="ge">Germany</option>
+												<option value="fr">France</option>
+											</select>
+										</label>
+									</div>
+									<div class="col-span-1 grid">
+										<label class="input-label" for="price">
+											<p class="text-body-xs text-graytext">Price</p>
+											<input
+												id="price"
+												name="price"
+												type="text"
+												class="input-small rounded-tl-none rounded-bl-none"
+											/>
+										</label>
+									</div>
+								</div>
+
+								<button class="btn btn-small mt-5" type="submit">
+									Confirm Settlement
+								</button>
+							</form>
 						</div>
+
 						<!-- Trade Blotter -->
 						<div class="rounded-lg bg-darkgray">
 							<p class="text-body-lg-m py-4 px-6 pb-3 text-left">
@@ -617,6 +669,492 @@
 				</section>
 			</main>
 		</div>
+
+		<!-- [START] Create Tournament Modal -->
+		<div
+			id="create-tournament-modal"
+			class="modal fixed left-0 top-0 z-10 hidden h-screen w-screen justify-center bg-black/60 pt-[52px]"
+		>
+			<!-- Modal -->
+			<div
+				class="relative mx-auto h-[700px] max-w-[528px] rounded-md bg-darkgray p-6 pr-3"
+			>
+				<!-- Modal Content  -->
+				<div class="flex h-full flex-col">
+					<p class="text-body-lg-m text-center">Create Tournament</p>
+
+					<div class="mt-6 flex h-full gap-6 sm:flex-col">
+						<div class="relative h-[100px] w-[100px] shrink-0 rounded-lg">
+							<img src="./img/global/photo-bg.svg" alt="img" />
+							<img
+								class="absolute left-1/2 top-1/2 h-[56px] w-[56px] -translate-x-1/2 -translate-y-1/2"
+								src="./img/global/photo-icon.svg"
+								alt="img"
+							/>
+							<button class="absolute left-1/2 -bottom-5 -translate-x-1/2">
+								<img src="./img/global/set-photo.svg" alt="img" />
+							</button>
+						</div>
+						<div class="h-full w-full">
+							<form action="#" class="flex h-full flex-col gap-3">
+								<label class="input-label pr-3" for="name">
+									<p class="text-body-m text-graytext">Tournament Name</p>
+									<input
+										id="name"
+										name="name"
+										type="text"
+										class="input-small p-3"
+									/>
+								</label>
+
+								<label class="input-label pr-3" for="limit">
+									<p class="text-body-m text-graytext">Position Limit</p>
+									<input
+										id="limit"
+										name="limit"
+										type="text"
+										class="input-small p-3"
+									/>
+								</label>
+
+								<div class="pr-3">
+									<hr
+										class="my-3 block h-[1px] w-full border-none bg-table-border"
+									/>
+								</div>
+
+								<label
+									class="input-label flex-row items-center gap-5 pr-3"
+									for="new-team"
+								>
+									<p class="text-body-m text-graytext">Teams</p>
+									<input
+										id="new-team"
+										name="new-team"
+										type="text"
+										class="input-small pr-12"
+									/>
+									<button
+										class="absolute top-[3px] right-[15px] ml-auto flex h-[30px] w-[30px] items-center justify-center rounded-md border border-transparent bg-[#2C3638] p-[7px] text-xl hover:border-lightgreen"
+									>
+										<span>+</span>
+									</button>
+								</label>
+
+								<!-- Results -->
+								<div class="max-h-[284px] overflow-y-auto py-2 pr-3">
+									<ul class="flex flex-col gap-1">
+										<li
+											class="flex justify-between rounded-md bg-lightgray py-2 px-3"
+										>
+											<span class="text-body-s">UVA</span>
+											<button class="group">
+												<svg
+													width="12"
+													height="12"
+													viewBox="0 0 12 12"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														class="transition-colors group-hover:fill-lightgreen"
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M10.7891 2.02444C11.0234 1.79013 11.0234 1.41023 10.7891 1.17591C10.5548 0.9416 10.1749 0.9416 9.94058 1.17591L5.98258 5.13391L2.02446 1.17579C1.79014 0.941471 1.41025 0.941472 1.17593 1.17579C0.941616 1.4101 0.941616 1.79 1.17593 2.02431L5.13424 5.98263L1.17593 9.94094C0.941616 10.1753 0.941616 10.5552 1.17593 10.7895C1.41024 11.0238 1.79014 11.0238 2.02446 10.7895L5.98245 6.83147L9.94058 10.7896C10.1749 11.0239 10.5548 11.0239 10.7891 10.7896C11.0234 10.5553 11.0234 10.1754 10.7891 9.94107L6.83079 5.98276L10.7891 2.02444Z"
+														fill="#A8ABAD"
+													/>
+												</svg>
+											</button>
+										</li>
+										<li
+											class="flex justify-between rounded-md bg-lightgray py-2 px-3"
+										>
+											<span class="text-body-s">UVA</span>
+											<button class="group">
+												<svg
+													width="12"
+													height="12"
+													viewBox="0 0 12 12"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														class="transition-colors group-hover:fill-lightgreen"
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M10.7891 2.02444C11.0234 1.79013 11.0234 1.41023 10.7891 1.17591C10.5548 0.9416 10.1749 0.9416 9.94058 1.17591L5.98258 5.13391L2.02446 1.17579C1.79014 0.941471 1.41025 0.941472 1.17593 1.17579C0.941616 1.4101 0.941616 1.79 1.17593 2.02431L5.13424 5.98263L1.17593 9.94094C0.941616 10.1753 0.941616 10.5552 1.17593 10.7895C1.41024 11.0238 1.79014 11.0238 2.02446 10.7895L5.98245 6.83147L9.94058 10.7896C10.1749 11.0239 10.5548 11.0239 10.7891 10.7896C11.0234 10.5553 11.0234 10.1754 10.7891 9.94107L6.83079 5.98276L10.7891 2.02444Z"
+														fill="#A8ABAD"
+													/>
+												</svg>
+											</button>
+										</li>
+										<li
+											class="flex justify-between rounded-md bg-lightgray py-2 px-3"
+										>
+											<span class="text-body-s">UVA</span>
+											<button class="group">
+												<svg
+													width="12"
+													height="12"
+													viewBox="0 0 12 12"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														class="transition-colors group-hover:fill-lightgreen"
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M10.7891 2.02444C11.0234 1.79013 11.0234 1.41023 10.7891 1.17591C10.5548 0.9416 10.1749 0.9416 9.94058 1.17591L5.98258 5.13391L2.02446 1.17579C1.79014 0.941471 1.41025 0.941472 1.17593 1.17579C0.941616 1.4101 0.941616 1.79 1.17593 2.02431L5.13424 5.98263L1.17593 9.94094C0.941616 10.1753 0.941616 10.5552 1.17593 10.7895C1.41024 11.0238 1.79014 11.0238 2.02446 10.7895L5.98245 6.83147L9.94058 10.7896C10.1749 11.0239 10.5548 11.0239 10.7891 10.7896C11.0234 10.5553 11.0234 10.1754 10.7891 9.94107L6.83079 5.98276L10.7891 2.02444Z"
+														fill="#A8ABAD"
+													/>
+												</svg>
+											</button>
+										</li>
+										<li
+											class="flex justify-between rounded-md bg-lightgray py-2 px-3"
+										>
+											<span class="text-body-s">UVA</span>
+											<button class="group">
+												<svg
+													width="12"
+													height="12"
+													viewBox="0 0 12 12"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														class="transition-colors group-hover:fill-lightgreen"
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M10.7891 2.02444C11.0234 1.79013 11.0234 1.41023 10.7891 1.17591C10.5548 0.9416 10.1749 0.9416 9.94058 1.17591L5.98258 5.13391L2.02446 1.17579C1.79014 0.941471 1.41025 0.941472 1.17593 1.17579C0.941616 1.4101 0.941616 1.79 1.17593 2.02431L5.13424 5.98263L1.17593 9.94094C0.941616 10.1753 0.941616 10.5552 1.17593 10.7895C1.41024 11.0238 1.79014 11.0238 2.02446 10.7895L5.98245 6.83147L9.94058 10.7896C10.1749 11.0239 10.5548 11.0239 10.7891 10.7896C11.0234 10.5553 11.0234 10.1754 10.7891 9.94107L6.83079 5.98276L10.7891 2.02444Z"
+														fill="#A8ABAD"
+													/>
+												</svg>
+											</button>
+										</li>
+										<li
+											class="flex justify-between rounded-md bg-lightgray py-2 px-3"
+										>
+											<span class="text-body-s">UVA</span>
+											<button class="group">
+												<svg
+													width="12"
+													height="12"
+													viewBox="0 0 12 12"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														class="transition-colors group-hover:fill-lightgreen"
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M10.7891 2.02444C11.0234 1.79013 11.0234 1.41023 10.7891 1.17591C10.5548 0.9416 10.1749 0.9416 9.94058 1.17591L5.98258 5.13391L2.02446 1.17579C1.79014 0.941471 1.41025 0.941472 1.17593 1.17579C0.941616 1.4101 0.941616 1.79 1.17593 2.02431L5.13424 5.98263L1.17593 9.94094C0.941616 10.1753 0.941616 10.5552 1.17593 10.7895C1.41024 11.0238 1.79014 11.0238 2.02446 10.7895L5.98245 6.83147L9.94058 10.7896C10.1749 11.0239 10.5548 11.0239 10.7891 10.7896C11.0234 10.5553 11.0234 10.1754 10.7891 9.94107L6.83079 5.98276L10.7891 2.02444Z"
+														fill="#A8ABAD"
+													/>
+												</svg>
+											</button>
+										</li>
+										<li
+											class="flex justify-between rounded-md bg-lightgray py-2 px-3"
+										>
+											<span class="text-body-s">UVA</span>
+											<button class="group">
+												<svg
+													width="12"
+													height="12"
+													viewBox="0 0 12 12"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														class="transition-colors group-hover:fill-lightgreen"
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M10.7891 2.02444C11.0234 1.79013 11.0234 1.41023 10.7891 1.17591C10.5548 0.9416 10.1749 0.9416 9.94058 1.17591L5.98258 5.13391L2.02446 1.17579C1.79014 0.941471 1.41025 0.941472 1.17593 1.17579C0.941616 1.4101 0.941616 1.79 1.17593 2.02431L5.13424 5.98263L1.17593 9.94094C0.941616 10.1753 0.941616 10.5552 1.17593 10.7895C1.41024 11.0238 1.79014 11.0238 2.02446 10.7895L5.98245 6.83147L9.94058 10.7896C10.1749 11.0239 10.5548 11.0239 10.7891 10.7896C11.0234 10.5553 11.0234 10.1754 10.7891 9.94107L6.83079 5.98276L10.7891 2.02444Z"
+														fill="#A8ABAD"
+													/>
+												</svg>
+											</button>
+										</li>
+										<li
+											class="flex justify-between rounded-md bg-lightgray py-2 px-3"
+										>
+											<span class="text-body-s">UVA</span>
+											<button class="group">
+												<svg
+													width="12"
+													height="12"
+													viewBox="0 0 12 12"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														class="transition-colors group-hover:fill-lightgreen"
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M10.7891 2.02444C11.0234 1.79013 11.0234 1.41023 10.7891 1.17591C10.5548 0.9416 10.1749 0.9416 9.94058 1.17591L5.98258 5.13391L2.02446 1.17579C1.79014 0.941471 1.41025 0.941472 1.17593 1.17579C0.941616 1.4101 0.941616 1.79 1.17593 2.02431L5.13424 5.98263L1.17593 9.94094C0.941616 10.1753 0.941616 10.5552 1.17593 10.7895C1.41024 11.0238 1.79014 11.0238 2.02446 10.7895L5.98245 6.83147L9.94058 10.7896C10.1749 11.0239 10.5548 11.0239 10.7891 10.7896C11.0234 10.5553 11.0234 10.1754 10.7891 9.94107L6.83079 5.98276L10.7891 2.02444Z"
+														fill="#A8ABAD"
+													/>
+												</svg>
+											</button>
+										</li>
+										<li
+											class="flex justify-between rounded-md bg-lightgray py-2 px-3"
+										>
+											<span class="text-body-s">UVA</span>
+											<button class="group">
+												<svg
+													width="12"
+													height="12"
+													viewBox="0 0 12 12"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														class="transition-colors group-hover:fill-lightgreen"
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M10.7891 2.02444C11.0234 1.79013 11.0234 1.41023 10.7891 1.17591C10.5548 0.9416 10.1749 0.9416 9.94058 1.17591L5.98258 5.13391L2.02446 1.17579C1.79014 0.941471 1.41025 0.941472 1.17593 1.17579C0.941616 1.4101 0.941616 1.79 1.17593 2.02431L5.13424 5.98263L1.17593 9.94094C0.941616 10.1753 0.941616 10.5552 1.17593 10.7895C1.41024 11.0238 1.79014 11.0238 2.02446 10.7895L5.98245 6.83147L9.94058 10.7896C10.1749 11.0239 10.5548 11.0239 10.7891 10.7896C11.0234 10.5553 11.0234 10.1754 10.7891 9.94107L6.83079 5.98276L10.7891 2.02444Z"
+														fill="#A8ABAD"
+													/>
+												</svg>
+											</button>
+										</li>
+										<li
+											class="flex justify-between rounded-md bg-lightgray py-2 px-3"
+										>
+											<span class="text-body-s">UVA</span>
+											<button class="group">
+												<svg
+													width="12"
+													height="12"
+													viewBox="0 0 12 12"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														class="transition-colors group-hover:fill-lightgreen"
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M10.7891 2.02444C11.0234 1.79013 11.0234 1.41023 10.7891 1.17591C10.5548 0.9416 10.1749 0.9416 9.94058 1.17591L5.98258 5.13391L2.02446 1.17579C1.79014 0.941471 1.41025 0.941472 1.17593 1.17579C0.941616 1.4101 0.941616 1.79 1.17593 2.02431L5.13424 5.98263L1.17593 9.94094C0.941616 10.1753 0.941616 10.5552 1.17593 10.7895C1.41024 11.0238 1.79014 11.0238 2.02446 10.7895L5.98245 6.83147L9.94058 10.7896C10.1749 11.0239 10.5548 11.0239 10.7891 10.7896C11.0234 10.5553 11.0234 10.1754 10.7891 9.94107L6.83079 5.98276L10.7891 2.02444Z"
+														fill="#A8ABAD"
+													/>
+												</svg>
+											</button>
+										</li>
+										<li
+											class="flex justify-between rounded-md bg-lightgray py-2 px-3"
+										>
+											<span class="text-body-s">UVA</span>
+											<button class="group">
+												<svg
+													width="12"
+													height="12"
+													viewBox="0 0 12 12"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														class="transition-colors group-hover:fill-lightgreen"
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M10.7891 2.02444C11.0234 1.79013 11.0234 1.41023 10.7891 1.17591C10.5548 0.9416 10.1749 0.9416 9.94058 1.17591L5.98258 5.13391L2.02446 1.17579C1.79014 0.941471 1.41025 0.941472 1.17593 1.17579C0.941616 1.4101 0.941616 1.79 1.17593 2.02431L5.13424 5.98263L1.17593 9.94094C0.941616 10.1753 0.941616 10.5552 1.17593 10.7895C1.41024 11.0238 1.79014 11.0238 2.02446 10.7895L5.98245 6.83147L9.94058 10.7896C10.1749 11.0239 10.5548 11.0239 10.7891 10.7896C11.0234 10.5553 11.0234 10.1754 10.7891 9.94107L6.83079 5.98276L10.7891 2.02444Z"
+														fill="#A8ABAD"
+													/>
+												</svg>
+											</button>
+										</li>
+									</ul>
+								</div>
+
+								<button class="btn btn-small mt-auto flex" type="submit">
+									Create
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- Close Btn -->
+				<button
+					id="create-tournament-close-btn"
+					class="group absolute right-3 top-3"
+				>
+					<svg
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<circle cx="12" cy="12" r="12" fill="#313A3D" />
+						<path
+							class="transition-colors group-hover:fill-lightgreen"
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M16.7891 8.02444C17.0234 7.79013 17.0234 7.41023 16.7891 7.17591C16.5548 6.9416 16.1749 6.9416 15.9406 7.17591L11.9826 11.1339L8.02446 7.17579C7.79014 6.94147 7.41025 6.94147 7.17593 7.17579C6.94162 7.4101 6.94162 7.79 7.17593 8.02431L11.1342 11.9826L7.17593 15.9409C6.94162 16.1753 6.94162 16.5552 7.17593 16.7895C7.41024 17.0238 7.79014 17.0238 8.02446 16.7895L11.9825 12.8315L15.9406 16.7896C16.1749 17.0239 16.5548 17.0239 16.7891 16.7896C17.0234 16.5553 17.0234 16.1754 16.7891 15.9411L12.8308 11.9828L16.7891 8.02444Z"
+							fill="#A8ABAD"
+						/>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<!-- [END] Create Tournament Modal -->
+
+		<!-- [START] Account Settings Modal -->
+		<div
+			id="account-settings-modal"
+			class="modal fixed left-0 top-0 z-10 hidden h-screen w-screen justify-center bg-black/60 pt-[52px]"
+		>
+			<!-- Modal -->
+			<div
+				class="relative mx-auto h-[700px] w-full max-w-[528px] rounded-md bg-darkgray p-6"
+			>
+				<!-- Modal Content  -->
+				<div class="flex h-full flex-col">
+					<p class="text-body-lg-m text-center">Account Settings</p>
+
+					<div class="mt-6 flex h-full gap-6 sm:flex-col">
+						<div class="relative h-[100px] w-[100px] shrink-0 rounded-full">
+							<img src="./img/global/account-avatar.svg" alt="img" />
+							<button class="absolute left-1/2 -bottom-5 -translate-x-1/2">
+								<img src="./img/global/set-photo.svg" alt="img" />
+							</button>
+						</div>
+						<div class="h-full w-full">
+							<form action="#" class="flex h-full flex-col gap-3">
+								<!-- Email -->
+								<label class="input-label" for="email">
+									<p class="text-body-m text-graytext">Email</p>
+									<input
+										id="email"
+										name="email"
+										type="text"
+										class="input-small p-3"
+									/>
+								</label>
+								<!-- First Name -->
+								<label class="input-label" for="firstName">
+									<p class="text-body-m text-graytext">First Name</p>
+									<input
+										id="firstName"
+										name="firstName"
+										type="text"
+										class="input-small p-3"
+									/>
+								</label>
+
+								<!-- Last Name -->
+								<label class="input-label" for="lastName">
+									<p class="text-body-m text-graytext">Last Name</p>
+									<input
+										id="lastName"
+										name="lastName"
+										type="text"
+										class="input-small p-3"
+									/>
+								</label>
+
+								<!-- Trading Acronym -->
+								<label class="input-label" for="acronym">
+									<p class="text-body-m text-graytext">Trading Acronym</p>
+									<input
+										id="acronym"
+										name="acronym"
+										type="text"
+										class="input-small p-3"
+									/>
+								</label>
+
+								<!-- Password -->
+								<p class="text-body-m text-graytext">Password</p>
+								<label for="password" class="input-label -mt-2">
+									<!-- Pswd input -->
+									<input
+										class="input-small password-input p-3"
+										name="password"
+										id="password"
+										type="password"
+									/>
+
+									<!-- Pswd Icons -->
+									<button
+										class="toggle-password-btn absolute right-5 top-1/2 h-[18px] w-[18px] -translate-y-1/2"
+									>
+										<img
+											class="pswd-icon-hidden"
+											src="./img/global/password-hidden.svg"
+											alt="icon"
+										/>
+										<img
+											class="pswd-icon-visible hidden"
+											src="./img/global/password-visible.svg"
+											alt="icon"
+										/>
+									</button>
+								</label>
+
+								<!-- Confirm Password -->
+								<p class="text-body-m text-graytext">Confirm Password</p>
+								<label for="passwordConfirm" class="input-label -mt-2">
+									<!-- Pswd input -->
+									<input
+										class="input-small password-input p-3"
+										name="passwordConfirm"
+										id="passwordConfirm"
+										type="password"
+									/>
+
+									<!-- Pswd Icons -->
+									<button
+										class="toggle-password-btn absolute right-5 top-1/2 h-[18px] w-[18px] -translate-y-1/2"
+									>
+										<img
+											class="pswd-icon-hidden"
+											src="./img/global/password-hidden.svg"
+											alt="icon"
+										/>
+										<img
+											class="pswd-icon-visible hidden"
+											src="./img/global/password-visible.svg"
+											alt="icon"
+										/>
+									</button>
+								</label>
+
+								<!-- Buttons -->
+								<div class="mt-auto grid grid-cols-2 gap-[14px]">
+									<button class="btn btn-reset p-[13px]">Reset</button>
+									<button class="btn p-[13px]">Update</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- Close Btn -->
+				<button
+					id="account-settings-close-btn"
+					class="group absolute right-3 top-3"
+				>
+					<svg
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<circle cx="12" cy="12" r="12" fill="#313A3D" />
+						<path
+							class="transition-colors group-hover:fill-lightgreen"
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M16.7891 8.02444C17.0234 7.79013 17.0234 7.41023 16.7891 7.17591C16.5548 6.9416 16.1749 6.9416 15.9406 7.17591L11.9826 11.1339L8.02446 7.17579C7.79014 6.94147 7.41025 6.94147 7.17593 7.17579C6.94162 7.4101 6.94162 7.79 7.17593 8.02431L11.1342 11.9826L7.17593 15.9409C6.94162 16.1753 6.94162 16.5552 7.17593 16.7895C7.41024 17.0238 7.79014 17.0238 8.02446 16.7895L11.9825 12.8315L15.9406 16.7896C16.1749 17.0239 16.5548 17.0239 16.7891 16.7896C17.0234 16.5553 17.0234 16.1754 16.7891 15.9411L12.8308 11.9828L16.7891 8.02444Z"
+							fill="#A8ABAD"
+						/>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<!-- [END] Account Settings Modal -->
 
 		<!-- JS -->
 		<script src="./js/main.js"></script>

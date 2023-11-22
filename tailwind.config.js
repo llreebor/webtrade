@@ -5,7 +5,7 @@ module.exports = {
 	theme: {
 		screens: {
 			xl: { max: '1449.99px' },
-			lg: { max: '1199.99px' },
+			lg: { max: '1349.99px' },
 			md: { max: '991.99px' },
 			sm: { max: '767.99px' },
 			xs: { max: '479.99px' },
@@ -24,6 +24,7 @@ module.exports = {
 				lightgray: '#313A3D',
 				graytext: '#A3A7A9',
 				lightblue: '#5E9BF7',
+				'lightblue-hovered': '#2675EC',
 				lightred: '#FF5F73',
 				lightgreen: '#69F29F',
 				'lightgreen-hovered': '#2BF87C',

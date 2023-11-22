@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Sign In | WebTrade</title>
+		<title>Sign In | OOFTrade</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -50,7 +50,7 @@
 						<label for="password" class="input-label mt-6">
 							<!-- Pswd input -->
 							<input
-								class="input-large"
+								class="input-large password-input"
 								placeholder="Password"
 								name="password"
 								id="password"
@@ -59,17 +59,15 @@
 
 							<!-- Pswd Icons -->
 							<button
-								id="toggle-password"
-								class="absolute right-5 top-1/2 h-[18px] w-[18px] -translate-y-1/2"
+								class="toggle-password-btn absolute right-5 top-1/2 h-[18px] w-[18px] -translate-y-1/2"
 							>
 								<img
-									id="pswd-icon-hidden"
+									class="pswd-icon-hidden"
 									src="./img/global/password-hidden.svg"
 									alt="icon"
 								/>
 								<img
-									class="hidden"
-									id="pswd-icon-visible"
+									class="pswd-icon-visible hidden"
 									src="./img/global/password-visible.svg"
 									alt="icon"
 								/>
