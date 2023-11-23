@@ -1052,6 +1052,10 @@ h5 {
   right: 15px;
 }
 
+.right-\[2px\] {
+  right: 2px;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -1076,6 +1080,10 @@ h5 {
   top: 1.25rem;
 }
 
+.top-\[2px\] {
+  top: 2px;
+}
+
 .top-\[34px\] {
   top: 34px;
 }
@@ -1086,14 +1094,6 @@ h5 {
 
 .top-full {
   top: 100%;
-}
-
-.right-\[2px\] {
-  right: 2px;
-}
-
-.top-\[2px\] {
-  top: 2px;
 }
 
 .-z-10 {
@@ -1215,10 +1215,6 @@ h5 {
   margin-top: auto;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
 .block {
   display: block;
 }
@@ -1335,24 +1331,12 @@ h5 {
   max-height: 284px;
 }
 
-.max-h-\[500px\] {
-  max-height: 500px;
-}
-
-.max-h-\[423px\] {
-  max-height: 423px;
-}
-
-.max-h-\[425px\] {
-  max-height: 425px;
-}
-
-.max-h-\[430px\] {
-  max-height: 430px;
-}
-
 .max-h-\[429px\] {
   max-height: 429px;
+}
+
+.max-h-\[500px\] {
+  max-height: 500px;
 }
 
 .min-h-full {
@@ -1936,12 +1920,12 @@ h5 {
   padding: 18px;
 }
 
-.p-\[7px\] {
-  padding: 7px;
-}
-
 .p-\[5px\] {
   padding: 5px;
+}
+
+.p-\[7px\] {
+  padding: 7px;
 }
 
 .px-0 {
@@ -2140,20 +2124,16 @@ h5 {
   font-weight: 600;
 }
 
-.leading-8 {
-  line-height: 2rem;
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
 }
 
 .leading-7 {
   line-height: 1.75rem;
-}
-
-.leading-6 {
-  line-height: 1.5rem;
-}
-
-.leading-9 {
-  line-height: 2.25rem;
 }
 
 .text-black\/70 {
