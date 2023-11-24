@@ -20,9 +20,9 @@ module.exports = {
 			},
 			colors: {
 				'main-black': '#061114',
-				darkgray: '#1A2427',
-				lightgray: '#313A3D',
-				graytext: '#A3A7A9',
+				darkgrey: '#1A2427',
+				lightgrey: '#313A3D',
+				greytext: '#A3A7A9',
 				lightblue: '#5E9BF7',
 				'lightblue-hovered': '#2675EC',
 				lightred: '#FF5F73',
@@ -40,6 +40,8 @@ module.exports = {
 					'linear-gradient(90deg, rgba(255, 95, 115, 0.00) -5.72%, #FF5F73 30.43%, rgba(255, 95, 115, 0.00) 70.26%)',
 				'green-gradient':
 					'linear-gradient(90deg, rgba(106, 244, 160, 0.00) -5.72%, #69F29F 30.43%, rgba(106, 244, 160, 0.00) 70.26%)',
+				'grey-gradient':
+					'linear-gradient(90deg, rgba(255, 255, 255, 0.00) -5.72%, #FFF 30.43%, rgba(255, 255, 255, 0.00) 70.26%)',
 			},
 			keyframes: {
 				'fade-in': {

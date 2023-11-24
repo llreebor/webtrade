@@ -21,7 +21,7 @@
 				<a href="#"><img src="./img/global/logo.svg" alt="logo" /></a>
 				<button
 					id="account-settings-btn"
-					class="mt-8 flex w-full items-center gap-3 rounded-lg border border-graytext py-[10px] px-[14px] transition-colors hover:border-lightgreen sm:justify-center sm:gap-0"
+					class="mt-8 flex w-full items-center gap-3 rounded-lg border border-greytext py-[10px] px-[14px] transition-colors hover:border-lightgreen sm:justify-center sm:gap-0"
 				>
 					<img
 						class="h-[28px] w-[28px]"
@@ -34,7 +34,7 @@
 				<ul class="mt-10 gap-0">
 					<li class="group">
 						<a
-							class="text-body-m group flex items-center gap-[14px] py-3 text-graytext group-[.active]:rounded-lg group-[.active]:bg-menu-item-gradient"
+							class="text-body-m group flex items-center gap-[14px] py-3 text-greytext group-[.active]:rounded-lg group-[.active]:bg-menu-item-gradient"
 							href="#"
 						>
 							<svg
@@ -75,7 +75,7 @@
 					</li>
 					<li class="active group">
 						<a
-							class="text-body-m group flex items-center gap-[14px] py-3 text-graytext group-[.active]:rounded-lg group-[.active]:bg-menu-item-gradient"
+							class="text-body-m group flex items-center gap-[14px] py-3 text-greytext group-[.active]:rounded-lg group-[.active]:bg-menu-item-gradient"
 							href="#"
 						>
 							<svg
@@ -111,7 +111,7 @@
 					</li>
 					<li class="group">
 						<a
-							class="text-body-m group flex items-center gap-[14px] py-3 text-graytext group-[.active]:rounded-lg group-[.active]:bg-menu-item-gradient"
+							class="text-body-m group flex items-center gap-[14px] py-3 text-greytext group-[.active]:rounded-lg group-[.active]:bg-menu-item-gradient"
 							href="#"
 						>
 							<svg
@@ -152,7 +152,7 @@
 					</li>
 					<li class="group">
 						<a
-							class="text-body-m group flex items-center gap-[14px] py-3 text-graytext group-[.active]:rounded-lg group-[.active]:bg-menu-item-gradient"
+							class="text-body-m group flex items-center gap-[14px] py-3 text-greytext group-[.active]:rounded-lg group-[.active]:bg-menu-item-gradient"
 							href="#"
 						>
 							<svg
@@ -178,7 +178,7 @@
 					</li>
 					<li class="group">
 						<a
-							class="text-body-m group flex items-center gap-[14px] py-3 text-graytext group-[.active]:rounded-lg group-[.active]:bg-menu-item-gradient"
+							class="text-body-m group flex items-center gap-[14px] py-3 text-greytext group-[.active]:rounded-lg group-[.active]:bg-menu-item-gradient"
 							href="#"
 						>
 							<svg
@@ -259,7 +259,7 @@
 							</button>
 							<button
 								id="create-tournament-btn"
-								class="ml-auto flex h-[54px] w-[54px] items-center justify-center rounded-lg border border-transparent bg-darkgray p-[18px] text-xl hover:border-lightgreen sm:h-5 sm:w-5"
+								class="ml-auto flex h-[54px] w-[54px] items-center justify-center rounded-lg border border-transparent bg-darkgrey p-[18px] text-xl hover:border-lightgreen sm:h-5 sm:w-5"
 							>
 								<span>+</span>
 							</button>
@@ -273,70 +273,386 @@
 				>
 					<div class="flex flex-col">
 						<!-- Main Table -->
-						<div
-							class="max-h-[600px] overflow-auto rounded-lg bg-darkgray px-2 py-4"
-						>
-							<table class="w-full table-auto">
-								<thead
-									class="text-body-xs border-b border-b-table-border text-graytext"
+						<div class="rounded-lg bg-darkgrey py-4 px-3">
+							<div
+								class="h-full max-h-[600px] overflow-auto pr-3 lg:max-h-[850px]"
+							>
+								<!-- Header -->
+								<div
+									class="flex gap-5 border-b border-b-table-border px-2 pb-2"
 								>
-									<div>
-										<th class="w-20 py-[5px] text-left">Team/Player</th>
-										<th class="py-[5px] px-[10px] text-left">Last</th>
-										<th class="py-[5px] px-[10px] text-left">Bid</th>
-										<th class="py-[5px] px-[10px] text-left">Ask</th>
-										<th class="py-[5px] text-right">My Positions</th>
+									<div class="w-[130px]">
+										<p class="text-body-xs text-greytext">Team/Player</p>
 									</div>
-								</thead>
-								<tbody class="text-body-s w-full">
-									<tr
-										class="w-full cursor-pointer overflow-auto overflow-hidden rounded-lg hover:bg-lightgray"
+									<div
+										class="text-body-xs grid w-full grid-cols-5 gap-5 text-greytext"
 									>
-										<td
-											class="whitespace-nowrap py-[5px] pr-[10px] text-lightblue"
+										<p class="text-body-xs text-greytext">Last</p>
+
+										<p class="text-body-xs text-greytext">Bid</p>
+
+										<p class="text-body-xs text-greytext">Ask</p>
+
+										<p
+											class="text-body-xs col-span-2 whitespace-nowrap text-right text-greytext"
 										>
-											United States
-										</td>
-										<td class="py-[5px] px-[10px] text-lightblue">68</td>
-										<td class="py-[5px] px-[10px] text-lightred">69.5</td>
-										<td class="py-[5px] px-[10px] text-lightgreen">70</td>
-										<td class="py-[5px] px-[10px] text-right">+8</td>
-									</tr>
-								</tbody>
-							</table>
-							<!-- <div class="w-full">
-								<div
-									class="text-body-s live-row low relative grid cursor-pointer grid-cols-5 gap-6 rounded-lg py-1 px-2 hover:bg-lightgray"
-								>
-									<p class="flex w-[100px] whitespace-nowrap pl-0">
-										United States
-									</p>
-									<p class="pl-[2px]">68</p>
-									<p class="pl-3">69.5</p>
-									<p class="pl-1">70</p>
-									<p class="pr-0 text-right">+8</p>
+											My Positions
+										</p>
+									</div>
 								</div>
-								<div
-									class="text-body-s live-row high relative grid cursor-pointer grid-cols-5 gap-6 rounded-lg py-1 px-2 hover:bg-lightgray"
-								>
-									<p class="flex w-[100px] whitespace-nowrap pl-0">Germany</p>
-									<p class="pl-[2px]">6</p>
-									<p class="pl-3">69</p>
-									<p class="pl-1">7</p>
-									<p class="pr-0 text-right">+38</p>
+
+								<!-- Rows -->
+								<div class="mt-1 flex flex-col gap-1">
+									<!-- Live Row -->
+									<div class="live-row live-row-green">
+										<div class="w-[130px]">
+											<p class="text-body-s">United States</p>
+										</div>
+										<div class="text-body-s grid w-full grid-cols-5 gap-3">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s text-left text-lightblue">69.5</p>
+											<p class="text-body-s text-left">69.5</p>
+											<p class="text-body-s col-span-2 text-right">70</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-red">
+										<div class="w-[130px]">
+											<p class="text-body-s text-lightblue">Germany</p>
+										</div>
+										<div class="text-body-s grid w-full grid-cols-5 gap-3">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s text-left">69.5</p>
+											<p class="text-body-s text-left text-lightred">69.5</p>
+											<p class="text-body-s col-span-2 text-right">70</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-green">
+										<div class="w-[130px]">
+											<p class="text-body-s">United States</p>
+										</div>
+										<div class="text-body-s grid w-full grid-cols-5 gap-3">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s text-left text-lightblue">69.5</p>
+											<p class="text-body-s text-left">69.5</p>
+											<p class="text-body-s col-span-2 text-right">70</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-red">
+										<div class="w-[130px]">
+											<p class="text-body-s text-lightblue">Germany</p>
+										</div>
+										<div class="text-body-s grid w-full grid-cols-5 gap-3">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s text-left">69.5</p>
+											<p class="text-body-s text-left text-lightred">69.5</p>
+											<p class="text-body-s col-span-2 text-right">70</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-green">
+										<div class="w-[130px]">
+											<p class="text-body-s">United States</p>
+										</div>
+										<div class="text-body-s grid w-full grid-cols-5 gap-3">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s text-left text-lightblue">69.5</p>
+											<p class="text-body-s text-left">69.5</p>
+											<p class="text-body-s col-span-2 text-right">70</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-red">
+										<div class="w-[130px]">
+											<p class="text-body-s text-lightblue">Germany</p>
+										</div>
+										<div class="text-body-s grid w-full grid-cols-5 gap-3">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s text-left">69.5</p>
+											<p class="text-body-s text-left text-lightred">69.5</p>
+											<p class="text-body-s col-span-2 text-right">70</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-green">
+										<div class="w-[130px]">
+											<p class="text-body-s">United States</p>
+										</div>
+										<div class="text-body-s grid w-full grid-cols-5 gap-3">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s text-left text-lightblue">69.5</p>
+											<p class="text-body-s text-left">69.5</p>
+											<p class="text-body-s col-span-2 text-right">70</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-red">
+										<div class="w-[130px]">
+											<p class="text-body-s text-lightblue">Germany</p>
+										</div>
+										<div class="text-body-s grid w-full grid-cols-5 gap-3">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s text-left">69.5</p>
+											<p class="text-body-s text-left text-lightred">69.5</p>
+											<p class="text-body-s col-span-2 text-right">70</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-green">
+										<div class="w-[130px]">
+											<p class="text-body-s">United States</p>
+										</div>
+										<div class="text-body-s grid w-full grid-cols-5 gap-3">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s text-left text-lightblue">69.5</p>
+											<p class="text-body-s text-left">69.5</p>
+											<p class="text-body-s col-span-2 text-right">70</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-red">
+										<div class="w-[130px]">
+											<p class="text-body-s text-lightblue">Germany</p>
+										</div>
+										<div class="text-body-s grid w-full grid-cols-5 gap-3">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s text-left">69.5</p>
+											<p class="text-body-s text-left text-lightred">69.5</p>
+											<p class="text-body-s col-span-2 text-right">70</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-green">
+										<div class="w-[130px]">
+											<p class="text-body-s">United States</p>
+										</div>
+										<div class="text-body-s grid w-full grid-cols-5 gap-3">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s text-left text-lightblue">69.5</p>
+											<p class="text-body-s text-left">69.5</p>
+											<p class="text-body-s col-span-2 text-right">70</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-red">
+										<div class="w-[130px]">
+											<p class="text-body-s text-lightblue">Germany</p>
+										</div>
+										<div class="text-body-s grid w-full grid-cols-5 gap-3">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s text-left">69.5</p>
+											<p class="text-body-s text-left text-lightred">69.5</p>
+											<p class="text-body-s col-span-2 text-right">70</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-green">
+										<div class="w-[130px]">
+											<p class="text-body-s">United States</p>
+										</div>
+										<div class="text-body-s grid w-full grid-cols-5 gap-3">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s text-left text-lightblue">69.5</p>
+											<p class="text-body-s text-left">69.5</p>
+											<p class="text-body-s col-span-2 text-right">70</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-red">
+										<div class="w-[130px]">
+											<p class="text-body-s text-lightblue">Germany</p>
+										</div>
+										<div class="text-body-s grid w-full grid-cols-5 gap-3">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s text-left">69.5</p>
+											<p class="text-body-s text-left text-lightred">69.5</p>
+											<p class="text-body-s col-span-2 text-right">70</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-green">
+										<div class="w-[130px]">
+											<p class="text-body-s">United States</p>
+										</div>
+										<div class="text-body-s grid w-full grid-cols-5 gap-3">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s text-left text-lightblue">69.5</p>
+											<p class="text-body-s text-left">69.5</p>
+											<p class="text-body-s col-span-2 text-right">70</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-red">
+										<div class="w-[130px]">
+											<p class="text-body-s text-lightblue">Germany</p>
+										</div>
+										<div class="text-body-s grid w-full grid-cols-5 gap-3">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s text-left">69.5</p>
+											<p class="text-body-s text-left text-lightred">69.5</p>
+											<p class="text-body-s col-span-2 text-right">70</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-green">
+										<div class="w-[130px]">
+											<p class="text-body-s">United States</p>
+										</div>
+										<div class="text-body-s grid w-full grid-cols-5 gap-3">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s text-left text-lightblue">69.5</p>
+											<p class="text-body-s text-left">69.5</p>
+											<p class="text-body-s col-span-2 text-right">70</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-red">
+										<div class="w-[130px]">
+											<p class="text-body-s text-lightblue">Germany</p>
+										</div>
+										<div class="text-body-s grid w-full grid-cols-5 gap-3">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s text-left">69.5</p>
+											<p class="text-body-s text-left text-lightred">69.5</p>
+											<p class="text-body-s col-span-2 text-right">70</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-green">
+										<div class="w-[130px]">
+											<p class="text-body-s">United States</p>
+										</div>
+										<div class="text-body-s grid w-full grid-cols-5 gap-3">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s text-left text-lightblue">69.5</p>
+											<p class="text-body-s text-left">69.5</p>
+											<p class="text-body-s col-span-2 text-right">70</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-red">
+										<div class="w-[130px]">
+											<p class="text-body-s text-lightblue">Germany</p>
+										</div>
+										<div class="text-body-s grid w-full grid-cols-5 gap-3">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s text-left">69.5</p>
+											<p class="text-body-s text-left text-lightred">69.5</p>
+											<p class="text-body-s col-span-2 text-right">70</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-green">
+										<div class="w-[130px]">
+											<p class="text-body-s">United States</p>
+										</div>
+										<div class="text-body-s grid w-full grid-cols-5 gap-3">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s text-left text-lightblue">69.5</p>
+											<p class="text-body-s text-left">69.5</p>
+											<p class="text-body-s col-span-2 text-right">70</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-red">
+										<div class="w-[130px]">
+											<p class="text-body-s text-lightblue">Germany</p>
+										</div>
+										<div class="text-body-s grid w-full grid-cols-5 gap-3">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s text-left">69.5</p>
+											<p class="text-body-s text-left text-lightred">69.5</p>
+											<p class="text-body-s col-span-2 text-right">70</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-green">
+										<div class="w-[130px]">
+											<p class="text-body-s">United States</p>
+										</div>
+										<div class="text-body-s grid w-full grid-cols-5 gap-3">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s text-left text-lightblue">69.5</p>
+											<p class="text-body-s text-left">69.5</p>
+											<p class="text-body-s col-span-2 text-right">70</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-red">
+										<div class="w-[130px]">
+											<p class="text-body-s text-lightblue">Germany</p>
+										</div>
+										<div class="text-body-s grid w-full grid-cols-5 gap-3">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s text-left">69.5</p>
+											<p class="text-body-s text-left text-lightred">69.5</p>
+											<p class="text-body-s col-span-2 text-right">70</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-green">
+										<div class="w-[130px]">
+											<p class="text-body-s">United States</p>
+										</div>
+										<div class="text-body-s grid w-full grid-cols-5 gap-3">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s text-left text-lightblue">69.5</p>
+											<p class="text-body-s text-left">69.5</p>
+											<p class="text-body-s col-span-2 text-right">70</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-red">
+										<div class="w-[130px]">
+											<p class="text-body-s text-lightblue">Germany</p>
+										</div>
+										<div class="text-body-s grid w-full grid-cols-5 gap-3">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s text-left">69.5</p>
+											<p class="text-body-s text-left text-lightred">69.5</p>
+											<p class="text-body-s col-span-2 text-right">70</p>
+										</div>
+									</div>
+
+									<!-- Live Row -->
+									<div class="live-row live-row-green">
+										<div class="w-[130px]">
+											<p class="text-body-s">United States</p>
+										</div>
+										<div class="text-body-s grid w-full grid-cols-5 gap-3">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s text-left text-lightblue">69.5</p>
+											<p class="text-body-s text-left">69.5</p>
+											<p class="text-body-s col-span-2 text-right">70</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-red">
+										<div class="w-[130px]">
+											<p class="text-body-s text-lightblue">Germany</p>
+										</div>
+										<div class="text-body-s grid w-full grid-cols-5 gap-3">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s text-left">69.5</p>
+											<p class="text-body-s text-left text-lightred">69.5</p>
+											<p class="text-body-s col-span-2 text-right">70</p>
+										</div>
+									</div>
 								</div>
-							</div> -->
+							</div>
 						</div>
 					</div>
 					<div class="flex flex-col gap-4">
 						<!-- Order Book-->
-						<div class="rounded-lg bg-darkgray py-4 px-6 pr-3">
+						<div class="rounded-lg bg-darkgrey py-4 px-6 pr-3">
 							<div class="flex justify-between">
 								<p class="text-body-lg-m pb-3 text-left">
 									United States Order Book
 								</p>
 								<button
-									class="flex h-6 w-6 items-center justify-center rounded-md border border-transparent bg-lightgray p-[5px] hover:border-lightgreen"
+									class="flex h-6 w-6 items-center justify-center rounded-md border border-transparent bg-lightgrey p-[5px] hover:border-lightgreen"
 								>
 									<svg
 										width="14"
@@ -355,7 +671,7 @@
 							<div class="max-h-[429px] overflow-auto pr-3">
 								<table class="overf-y-auto w-full table-fixed border-collapse">
 									<thead
-										class="text-body-xs border-b border-b-table-border text-graytext"
+										class="text-body-xs border-b border-b-table-border text-greytext"
 									>
 										<tr>
 											<th
@@ -385,7 +701,7 @@
 										>
 											<td class="text-center leading-7">
 												<div
-													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgrey leading-7"
 												>
 													<button class="group absolute right-[2px] top-[2px]">
 														<svg
@@ -424,7 +740,7 @@
 											</td>
 											<td class="text-center leading-7">
 												<div
-													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgrey leading-7"
 												>
 													<button class="group absolute right-[2px] top-[2px]">
 														<svg
@@ -452,7 +768,7 @@
 										>
 											<td class="text-center leading-7">
 												<div
-													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgrey leading-7"
 												>
 													<button class="group absolute right-[2px] top-[2px]">
 														<svg
@@ -491,7 +807,7 @@
 											</td>
 											<td class="text-center leading-7">
 												<div
-													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgrey leading-7"
 												>
 													<button class="group absolute right-[2px] top-[2px]">
 														<svg
@@ -519,7 +835,7 @@
 										>
 											<td class="text-center leading-7">
 												<div
-													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgrey leading-7"
 												>
 													<button class="group absolute right-[2px] top-[2px]">
 														<svg
@@ -558,7 +874,7 @@
 											</td>
 											<td class="text-center leading-7">
 												<div
-													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgrey leading-7"
 												>
 													<button class="group absolute right-[2px] top-[2px]">
 														<svg
@@ -586,7 +902,7 @@
 										>
 											<td class="text-center leading-7">
 												<div
-													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgrey leading-7"
 												>
 													<button class="group absolute right-[2px] top-[2px]">
 														<svg
@@ -625,7 +941,7 @@
 											</td>
 											<td class="text-center leading-7">
 												<div
-													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgrey leading-7"
 												>
 													<button class="group absolute right-[2px] top-[2px]">
 														<svg
@@ -653,7 +969,7 @@
 										>
 											<td class="text-center leading-7">
 												<div
-													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgrey leading-7"
 												>
 													<button class="group absolute right-[2px] top-[2px]">
 														<svg
@@ -692,7 +1008,7 @@
 											</td>
 											<td class="text-center leading-7">
 												<div
-													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgrey leading-7"
 												>
 													<button class="group absolute right-[2px] top-[2px]">
 														<svg
@@ -720,7 +1036,7 @@
 										>
 											<td class="text-center leading-7">
 												<div
-													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgrey leading-7"
 												>
 													<button class="group absolute right-[2px] top-[2px]">
 														<svg
@@ -759,7 +1075,7 @@
 											</td>
 											<td class="text-center leading-7">
 												<div
-													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgrey leading-7"
 												>
 													<button class="group absolute right-[2px] top-[2px]">
 														<svg
@@ -787,7 +1103,7 @@
 										>
 											<td class="text-center leading-7">
 												<div
-													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgrey leading-7"
 												>
 													<button class="group absolute right-[2px] top-[2px]">
 														<svg
@@ -826,7 +1142,7 @@
 											</td>
 											<td class="text-center leading-7">
 												<div
-													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgrey leading-7"
 												>
 													<button class="group absolute right-[2px] top-[2px]">
 														<svg
@@ -854,7 +1170,7 @@
 										>
 											<td class="text-center leading-7">
 												<div
-													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgrey leading-7"
 												>
 													<button class="group absolute right-[2px] top-[2px]">
 														<svg
@@ -893,7 +1209,7 @@
 											</td>
 											<td class="text-center leading-7">
 												<div
-													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgrey leading-7"
 												>
 													<button class="group absolute right-[2px] top-[2px]">
 														<svg
@@ -921,7 +1237,7 @@
 										>
 											<td class="text-center leading-7">
 												<div
-													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgrey leading-7"
 												>
 													<button class="group absolute right-[2px] top-[2px]">
 														<svg
@@ -960,7 +1276,7 @@
 											</td>
 											<td class="text-center leading-7">
 												<div
-													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgrey leading-7"
 												>
 													<button class="group absolute right-[2px] top-[2px]">
 														<svg
@@ -988,7 +1304,7 @@
 										>
 											<td class="text-center leading-7">
 												<div
-													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgrey leading-7"
 												>
 													<button class="group absolute right-[2px] top-[2px]">
 														<svg
@@ -1027,7 +1343,7 @@
 											</td>
 											<td class="text-center leading-7">
 												<div
-													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgrey leading-7"
 												>
 													<button class="group absolute right-[2px] top-[2px]">
 														<svg
@@ -1055,7 +1371,7 @@
 										>
 											<td class="text-center leading-7">
 												<div
-													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgrey leading-7"
 												>
 													<button class="group absolute right-[2px] top-[2px]">
 														<svg
@@ -1094,7 +1410,7 @@
 											</td>
 											<td class="text-center leading-7">
 												<div
-													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgrey leading-7"
 												>
 													<button class="group absolute right-[2px] top-[2px]">
 														<svg
@@ -1122,7 +1438,7 @@
 										>
 											<td class="text-center leading-7">
 												<div
-													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgrey leading-7"
 												>
 													<button class="group absolute right-[2px] top-[2px]">
 														<svg
@@ -1161,7 +1477,7 @@
 											</td>
 											<td class="text-center leading-7">
 												<div
-													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgrey leading-7"
 												>
 													<button class="group absolute right-[2px] top-[2px]">
 														<svg
@@ -1189,7 +1505,7 @@
 										>
 											<td class="text-center leading-7">
 												<div
-													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgrey leading-7"
 												>
 													<button class="group absolute right-[2px] top-[2px]">
 														<svg
@@ -1228,7 +1544,7 @@
 											</td>
 											<td class="text-center leading-7">
 												<div
-													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgrey leading-7"
 												>
 													<button class="group absolute right-[2px] top-[2px]">
 														<svg
@@ -1256,7 +1572,7 @@
 										>
 											<td class="text-center leading-7">
 												<div
-													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgrey leading-7"
 												>
 													<button class="group absolute right-[2px] top-[2px]">
 														<svg
@@ -1295,7 +1611,7 @@
 											</td>
 											<td class="text-center leading-7">
 												<div
-													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgrey leading-7"
 												>
 													<button class="group absolute right-[2px] top-[2px]">
 														<svg
@@ -1323,7 +1639,7 @@
 										>
 											<td class="text-center leading-7">
 												<div
-													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgrey leading-7"
 												>
 													<button class="group absolute right-[2px] top-[2px]">
 														<svg
@@ -1362,7 +1678,7 @@
 											</td>
 											<td class="text-center leading-7">
 												<div
-													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgrey leading-7"
 												>
 													<button class="group absolute right-[2px] top-[2px]">
 														<svg
@@ -1391,14 +1707,14 @@
 						</div>
 
 						<!-- PnL Leaderboard -->
-						<div class="rounded-lg bg-darkgray py-4 px-6 pr-3">
+						<div class="rounded-lg bg-darkgrey py-4 px-6 pr-3">
 							<p class="text-body-lg-m pb-3 text-left">
 								United States PnL Leaderboard:
 							</p>
 							<div class="max-h-[300px] overflow-auto pr-3">
 								<table class="overf-y-auto w-full table-auto">
 									<thead
-										class="text-body-xs border-b border-b-table-border text-graytext"
+										class="text-body-xs border-b border-b-table-border text-greytext"
 									>
 										<tr>
 											<th class="w-20 py-[5px] px-[10px] text-left">Rank</th>
@@ -1411,7 +1727,7 @@
 										class="text-body-s overf-y-auto h-full max-h-[500px] w-full"
 									>
 										<tr
-											class="cursor-pointer overflow-auto rounded-lg text-lightblue hover:bg-lightgray"
+											class="cursor-pointer overflow-auto rounded-lg text-lightblue hover:bg-lightgrey"
 										>
 											<td class="py-[5px] px-[10px]">1</td>
 											<td class="py-[5px] px-[10px]">FHS</td>
@@ -1421,7 +1737,7 @@
 											</td>
 										</tr>
 										<tr
-											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 										>
 											<td class="py-[5px] px-[10px]">2</td>
 											<td class="py-[5px] px-[10px]">FHS</td>
@@ -1431,7 +1747,7 @@
 											</td>
 										</tr>
 										<tr
-											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 										>
 											<td class="py-[5px] px-[10px]">3</td>
 											<td class="py-[5px] px-[10px]">FHS</td>
@@ -1439,7 +1755,7 @@
 											<td class="py-[5px] px-[10px] text-right">-10</td>
 										</tr>
 										<tr
-											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 										>
 											<td class="py-[5px] px-[10px]">4</td>
 											<td class="py-[5px] px-[10px]">FHS</td>
@@ -1449,7 +1765,7 @@
 											</td>
 										</tr>
 										<tr
-											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 										>
 											<td class="py-[5px] px-[10px]">5</td>
 											<td class="py-[5px] px-[10px]">FHS</td>
@@ -1459,7 +1775,7 @@
 											</td>
 										</tr>
 										<tr
-											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 										>
 											<td class="py-[5px] px-[10px]">3</td>
 											<td class="py-[5px] px-[10px]">FHS</td>
@@ -1467,7 +1783,7 @@
 											<td class="py-[5px] px-[10px] text-right">-10</td>
 										</tr>
 										<tr
-											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 										>
 											<td class="py-[5px] px-[10px]">4</td>
 											<td class="py-[5px] px-[10px]">FHS</td>
@@ -1477,7 +1793,7 @@
 											</td>
 										</tr>
 										<tr
-											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 										>
 											<td class="py-[5px] px-[10px]">5</td>
 											<td class="py-[5px] px-[10px]">FHS</td>
@@ -1487,7 +1803,7 @@
 											</td>
 										</tr>
 										<tr
-											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 										>
 											<td class="py-[5px] px-[10px]">6</td>
 											<td class="py-[5px] px-[10px]">FHS</td>
@@ -1497,7 +1813,7 @@
 											</td>
 										</tr>
 										<tr
-											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 										>
 											<td class="py-[5px] px-[10px]">7</td>
 											<td class="py-[5px] px-[10px]">FHS</td>
@@ -1505,7 +1821,7 @@
 											<td class="py-[5px] px-[10px] text-right">-10</td>
 										</tr>
 										<tr
-											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 										>
 											<td class="py-[5px] px-[10px]">8</td>
 											<td class="py-[5px] px-[10px]">FHS</td>
@@ -1515,7 +1831,7 @@
 											</td>
 										</tr>
 										<tr
-											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 										>
 											<td class="py-[5px] px-[10px]">9</td>
 											<td class="py-[5px] px-[10px]">FHS</td>
@@ -1525,7 +1841,7 @@
 											</td>
 										</tr>
 										<tr
-											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 										>
 											<td class="py-[5px] px-[10px]">10</td>
 											<td class="py-[5px] px-[10px]">FHS</td>
@@ -1541,19 +1857,19 @@
 					</div>
 					<div class="flex flex-col gap-4">
 						<!-- Trade -->
-						<div class="rounded-lg bg-darkgray py-4 px-6">
+						<div class="rounded-lg bg-darkgrey py-4 px-6">
 							<p class="text-body-lg-m pb-3 text-left">Settlement</p>
 							<form>
 								<div class="flex gap-[2px]">
 									<div class="grid grow">
 										<label class="input-label" for="quantity">
-											<p class="text-body-xs text-graytext">Team/Player</p>
+											<p class="text-body-xs text-greytext">Team/Player</p>
 											<p class="text-body-xs mt-[10px]">United States</p>
 										</label>
 									</div>
 									<div class="grid grow">
 										<label class="input-label" for="team">
-											<p class="text-body-xs text-graytext">Order Type</p>
+											<p class="text-body-xs text-greytext">Order Type</p>
 											<select
 												id="team"
 												name="team"
@@ -1567,7 +1883,7 @@
 									</div>
 									<div class="grid w-[56px]">
 										<label class="input-label" for="price">
-											<p class="text-body-xs text-graytext">Price</p>
+											<p class="text-body-xs text-greytext">Price</p>
 											<input
 												id="price"
 												name="price"
@@ -1578,7 +1894,7 @@
 									</div>
 									<div class="grid w-[56px]">
 										<label class="input-label" for="quantity">
-											<p class="text-body-xs text-graytext">Quantity</p>
+											<p class="text-body-xs text-greytext">Quantity</p>
 											<input
 												id="quantity"
 												name="quantity"
@@ -1599,12 +1915,12 @@
 						</div>
 
 						<!-- Trade Blotter -->
-						<div class="rounded-lg bg-darkgray py-4 px-6 pr-3">
+						<div class="rounded-lg bg-darkgrey py-4 px-6 pr-3">
 							<p class="text-body-lg-m pb-3 text-left">Trade Blotter</p>
 							<div class="max-h-[300px] overflow-auto pr-3">
 								<table class="w-full table-auto">
 									<thead
-										class="text-body-xs border-b border-b-table-border text-graytext"
+										class="text-body-xs border-b border-b-table-border text-greytext"
 									>
 										<tr>
 											<th class="w-20 py-[5px] px-[10px] text-left">Time</th>
@@ -1618,72 +1934,72 @@
 										class="text-body-s overf-y-auto h-full max-h-[500px] w-full"
 									>
 										<tr
-											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 										>
-											<td class="py-[5px] px-[10px] text-graytext">15.25.03</td>
+											<td class="py-[5px] px-[10px] text-greytext">15.25.03</td>
 											<td class="py-[5px] px-[10px]">LZJ</td>
 											<td class="py-[5px] px-[10px]">FHS</td>
 											<td class="py-[5px] px-[10px]">68</td>
 											<td class="py-[5px] px-[10px] text-right">1</td>
 										</tr>
 										<tr
-											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 										>
-											<td class="py-[5px] px-[10px] text-graytext">15.25.03</td>
+											<td class="py-[5px] px-[10px] text-greytext">15.25.03</td>
 											<td class="py-[5px] px-[10px]">LZJ</td>
 											<td class="py-[5px] px-[10px]">FHS</td>
 											<td class="py-[5px] px-[10px]">68</td>
 											<td class="py-[5px] px-[10px] text-right">1</td>
 										</tr>
 										<tr
-											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 										>
-											<td class="py-[5px] px-[10px] text-graytext">15.25.03</td>
+											<td class="py-[5px] px-[10px] text-greytext">15.25.03</td>
 											<td class="py-[5px] px-[10px]">LZJ</td>
 											<td class="py-[5px] px-[10px]">FHS</td>
 											<td class="py-[5px] px-[10px]">68</td>
 											<td class="py-[5px] px-[10px] text-right">1</td>
 										</tr>
 										<tr
-											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 										>
-											<td class="py-[5px] px-[10px] text-graytext">15.25.03</td>
+											<td class="py-[5px] px-[10px] text-greytext">15.25.03</td>
 											<td class="py-[5px] px-[10px]">LZJ</td>
 											<td class="py-[5px] px-[10px]">FHS</td>
 											<td class="py-[5px] px-[10px]">68</td>
 											<td class="py-[5px] px-[10px] text-right">1</td>
 										</tr>
 										<tr
-											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 										>
-											<td class="py-[5px] px-[10px] text-graytext">15.25.03</td>
+											<td class="py-[5px] px-[10px] text-greytext">15.25.03</td>
 											<td class="py-[5px] px-[10px]">LZJ</td>
 											<td class="py-[5px] px-[10px]">FHS</td>
 											<td class="py-[5px] px-[10px]">68</td>
 											<td class="py-[5px] px-[10px] text-right">1</td>
 										</tr>
 										<tr
-											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 										>
-											<td class="py-[5px] px-[10px] text-graytext">15.25.03</td>
+											<td class="py-[5px] px-[10px] text-greytext">15.25.03</td>
 											<td class="py-[5px] px-[10px]">LZJ</td>
 											<td class="py-[5px] px-[10px]">FHS</td>
 											<td class="py-[5px] px-[10px]">68</td>
 											<td class="py-[5px] px-[10px] text-right">1</td>
 										</tr>
 										<tr
-											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 										>
-											<td class="py-[5px] px-[10px] text-graytext">15.25.03</td>
+											<td class="py-[5px] px-[10px] text-greytext">15.25.03</td>
 											<td class="py-[5px] px-[10px]">LZJ</td>
 											<td class="py-[5px] px-[10px]">FHS</td>
 											<td class="py-[5px] px-[10px]">68</td>
 											<td class="py-[5px] px-[10px] text-right">1</td>
 										</tr>
 										<tr
-											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 										>
-											<td class="py-[5px] px-[10px] text-graytext">15.25.03</td>
+											<td class="py-[5px] px-[10px] text-greytext">15.25.03</td>
 											<td class="py-[5px] px-[10px]">LZJ</td>
 											<td class="py-[5px] px-[10px]">FHS</td>
 											<td class="py-[5px] px-[10px]">68</td>
@@ -1691,7 +2007,7 @@
 										</tr>
 
 										<tr
-											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 										>
 											<td class="py-[5px] px-[10px]">15.25.03</td>
 											<td class="py-[5px] px-[10px]">LZJ</td>
@@ -1700,7 +2016,7 @@
 											<td class="py-[5px] px-[10px] text-right">1</td>
 										</tr>
 										<tr
-											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 										>
 											<td class="py-[5px] px-[10px]">15.25.03</td>
 											<td class="py-[5px] px-[10px]">LZJ</td>
@@ -1709,7 +2025,7 @@
 											<td class="py-[5px] px-[10px] text-right">1</td>
 										</tr>
 										<tr
-											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 										>
 											<td class="py-[5px] px-[10px]">15.25.03</td>
 											<td class="py-[5px] px-[10px]">LZJ</td>
@@ -1718,7 +2034,7 @@
 											<td class="py-[5px] px-[10px] text-right">1</td>
 										</tr>
 										<tr
-											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+											class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 										>
 											<td class="py-[5px] px-[10px]">15.25.03</td>
 											<td class="py-[5px] px-[10px]">LZJ</td>
@@ -1732,18 +2048,18 @@
 						</div>
 
 						<!-- Overall PnL Ranking -->
-						<div class="rounded-lg bg-darkgray">
+						<div class="rounded-lg bg-darkgrey">
 							<p class="text-body-lg-m py-4 px-6 pb-3 text-left">
 								Overall PnL Ranking
 							</p>
 							<div
 								class="flex items-center justify-between bg-[#2C3638] px-6 py-[2px]"
 							>
-								<p class="text-body-s text-graytext">
+								<p class="text-body-s text-greytext">
 									Players:
 									<span class="text-body-m-medium text-white">24</span>
 								</p>
-								<p class="text-body-s text-graytext">
+								<p class="text-body-s text-greytext">
 									Prize Pool:
 									<span class="text-body-m-medium text-white">$4800</span>
 								</p>
@@ -1752,7 +2068,7 @@
 								<div class="max-h-[220px] overflow-auto pr-3">
 									<table class="overf-y-auto w-full table-auto">
 										<thead
-											class="text-body-xs border-b border-b-table-border text-graytext"
+											class="text-body-xs border-b border-b-table-border text-greytext"
 										>
 											<tr>
 												<th class="w-20 py-[5px] px-[10px] text-left">Rank</th>
@@ -1765,7 +2081,7 @@
 											class="text-body-s overf-y-auto h-full max-h-[500px] w-full"
 										>
 											<tr
-												class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+												class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 											>
 												<td class="py-[5px] px-[10px]">1</td>
 												<td class="py-[5px] px-[10px]">FHS</td>
@@ -1773,7 +2089,7 @@
 												<td class="py-[5px] px-[10px] text-right">35</td>
 											</tr>
 											<tr
-												class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+												class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 											>
 												<td class="py-[5px] px-[10px]">3</td>
 												<td class="py-[5px] px-[10px]">HZT</td>
@@ -1781,7 +2097,7 @@
 												<td class="py-[5px] px-[10px] text-right">15</td>
 											</tr>
 											<tr
-												class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+												class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 											>
 												<td class="py-[5px] px-[10px]">1</td>
 												<td class="py-[5px] px-[10px]">FHS</td>
@@ -1789,7 +2105,7 @@
 												<td class="py-[5px] px-[10px] text-right">35</td>
 											</tr>
 											<tr
-												class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+												class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 											>
 												<td class="py-[5px] px-[10px]">3</td>
 												<td class="py-[5px] px-[10px]">HZT</td>
@@ -1797,7 +2113,7 @@
 												<td class="py-[5px] px-[10px] text-right">15</td>
 											</tr>
 											<tr
-												class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+												class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 											>
 												<td class="py-[5px] px-[10px]">1</td>
 												<td class="py-[5px] px-[10px]">FHS</td>
@@ -1805,7 +2121,7 @@
 												<td class="py-[5px] px-[10px] text-right">35</td>
 											</tr>
 											<tr
-												class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+												class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 											>
 												<td class="py-[5px] px-[10px]">3</td>
 												<td class="py-[5px] px-[10px]">HZT</td>
@@ -1813,7 +2129,7 @@
 												<td class="py-[5px] px-[10px] text-right">15</td>
 											</tr>
 											<tr
-												class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+												class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 											>
 												<td class="py-[5px] px-[10px]">3</td>
 												<td class="py-[5px] px-[10px]">FHS</td>
@@ -1821,7 +2137,7 @@
 												<td class="py-[5px] px-[10px] text-right">-10</td>
 											</tr>
 											<tr
-												class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+												class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 											>
 												<td class="py-[5px] px-[10px]">4</td>
 												<td class="py-[5px] px-[10px]">FHS</td>
@@ -1831,7 +2147,7 @@
 												</td>
 											</tr>
 											<tr
-												class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+												class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 											>
 												<td class="py-[5px] px-[10px]">5</td>
 												<td class="py-[5px] px-[10px]">FHS</td>
@@ -1841,7 +2157,7 @@
 												</td>
 											</tr>
 											<tr
-												class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgray"
+												class="cursor-pointer overflow-auto rounded-lg hover:bg-lightgrey"
 											>
 												<td class="py-[5px] px-[10px]">6</td>
 												<td class="py-[5px] px-[10px]">FHS</td>
@@ -1867,7 +2183,7 @@
 		>
 			<!-- Modal -->
 			<div
-				class="relative mx-auto h-[700px] max-w-[528px] rounded-md bg-darkgray p-6 pr-3"
+				class="relative mx-auto h-[700px] max-w-[528px] rounded-md bg-darkgrey p-6 pr-3"
 			>
 				<!-- Modal Content  -->
 				<div class="flex h-full flex-col">
@@ -1888,7 +2204,7 @@
 						<div class="h-full w-full">
 							<form action="#" class="flex h-full flex-col gap-3">
 								<label class="input-label pr-3" for="name">
-									<p class="text-body-m text-graytext">Tournament Name</p>
+									<p class="text-body-m text-greytext">Tournament Name</p>
 									<input
 										id="name"
 										name="name"
@@ -1898,7 +2214,7 @@
 								</label>
 
 								<label class="input-label pr-3" for="limit">
-									<p class="text-body-m text-graytext">Position Limit</p>
+									<p class="text-body-m text-greytext">Position Limit</p>
 									<input
 										id="limit"
 										name="limit"
@@ -1917,7 +2233,7 @@
 									class="input-label flex-row items-center gap-5 pr-3"
 									for="new-team"
 								>
-									<p class="text-body-m text-graytext">Teams</p>
+									<p class="text-body-m text-greytext">Teams</p>
 									<input
 										id="new-team"
 										name="new-team"
@@ -1932,10 +2248,10 @@
 								</label>
 
 								<!-- Results -->
-								<div class="overf-y-auto max-h-[284px] py-2 pr-3">
+								<div class="max-h-[284px] overflow-y-auto py-2 pr-3">
 									<ul class="flex flex-col gap-1">
 										<li
-											class="flex justify-between rounded-md bg-lightgray py-2 px-3"
+											class="flex justify-between rounded-md bg-lightgrey py-2 px-3"
 										>
 											<span class="text-body-s">UVA</span>
 											<button class="group">
@@ -1957,7 +2273,7 @@
 											</button>
 										</li>
 										<li
-											class="flex justify-between rounded-md bg-lightgray py-2 px-3"
+											class="flex justify-between rounded-md bg-lightgrey py-2 px-3"
 										>
 											<span class="text-body-s">UVA</span>
 											<button class="group">
@@ -1979,7 +2295,7 @@
 											</button>
 										</li>
 										<li
-											class="flex justify-between rounded-md bg-lightgray py-2 px-3"
+											class="flex justify-between rounded-md bg-lightgrey py-2 px-3"
 										>
 											<span class="text-body-s">UVA</span>
 											<button class="group">
@@ -2001,7 +2317,7 @@
 											</button>
 										</li>
 										<li
-											class="flex justify-between rounded-md bg-lightgray py-2 px-3"
+											class="flex justify-between rounded-md bg-lightgrey py-2 px-3"
 										>
 											<span class="text-body-s">UVA</span>
 											<button class="group">
@@ -2023,7 +2339,7 @@
 											</button>
 										</li>
 										<li
-											class="flex justify-between rounded-md bg-lightgray py-2 px-3"
+											class="flex justify-between rounded-md bg-lightgrey py-2 px-3"
 										>
 											<span class="text-body-s">UVA</span>
 											<button class="group">
@@ -2045,7 +2361,7 @@
 											</button>
 										</li>
 										<li
-											class="flex justify-between rounded-md bg-lightgray py-2 px-3"
+											class="flex justify-between rounded-md bg-lightgrey py-2 px-3"
 										>
 											<span class="text-body-s">UVA</span>
 											<button class="group">
@@ -2067,7 +2383,7 @@
 											</button>
 										</li>
 										<li
-											class="flex justify-between rounded-md bg-lightgray py-2 px-3"
+											class="flex justify-between rounded-md bg-lightgrey py-2 px-3"
 										>
 											<span class="text-body-s">UVA</span>
 											<button class="group">
@@ -2089,7 +2405,7 @@
 											</button>
 										</li>
 										<li
-											class="flex justify-between rounded-md bg-lightgray py-2 px-3"
+											class="flex justify-between rounded-md bg-lightgrey py-2 px-3"
 										>
 											<span class="text-body-s">UVA</span>
 											<button class="group">
@@ -2111,7 +2427,7 @@
 											</button>
 										</li>
 										<li
-											class="flex justify-between rounded-md bg-lightgray py-2 px-3"
+											class="flex justify-between rounded-md bg-lightgrey py-2 px-3"
 										>
 											<span class="text-body-s">UVA</span>
 											<button class="group">
@@ -2133,7 +2449,7 @@
 											</button>
 										</li>
 										<li
-											class="flex justify-between rounded-md bg-lightgray py-2 px-3"
+											class="flex justify-between rounded-md bg-lightgrey py-2 px-3"
 										>
 											<span class="text-body-s">UVA</span>
 											<button class="group">
@@ -2197,7 +2513,7 @@
 		>
 			<!-- Modal -->
 			<div
-				class="relative mx-auto h-[700px] w-full max-w-[528px] rounded-md bg-darkgray p-6"
+				class="relative mx-auto h-[700px] w-full max-w-[528px] rounded-md bg-darkgrey p-6"
 			>
 				<!-- Modal Content  -->
 				<div class="flex h-full flex-col">
@@ -2214,7 +2530,7 @@
 							<form action="#" class="flex h-full flex-col gap-3">
 								<!-- Email -->
 								<label class="input-label" for="email">
-									<p class="text-body-m text-graytext">Email</p>
+									<p class="text-body-m text-greytext">Email</p>
 									<input
 										id="email"
 										name="email"
@@ -2224,7 +2540,7 @@
 								</label>
 								<!-- First Name -->
 								<label class="input-label" for="firstName">
-									<p class="text-body-m text-graytext">First Name</p>
+									<p class="text-body-m text-greytext">First Name</p>
 									<input
 										id="firstName"
 										name="firstName"
@@ -2235,7 +2551,7 @@
 
 								<!-- Last Name -->
 								<label class="input-label" for="lastName">
-									<p class="text-body-m text-graytext">Last Name</p>
+									<p class="text-body-m text-greytext">Last Name</p>
 									<input
 										id="lastName"
 										name="lastName"
@@ -2246,7 +2562,7 @@
 
 								<!-- Trading Acronym -->
 								<label class="input-label" for="acronym">
-									<p class="text-body-m text-graytext">Trading Acronym</p>
+									<p class="text-body-m text-greytext">Trading Acronym</p>
 									<input
 										id="acronym"
 										name="acronym"
@@ -2256,7 +2572,7 @@
 								</label>
 
 								<!-- Password -->
-								<p class="text-body-m text-graytext">Password</p>
+								<p class="text-body-m text-greytext">Password</p>
 								<label for="password" class="input-label -mt-2">
 									<!-- Pswd input -->
 									<input
@@ -2284,7 +2600,7 @@
 								</label>
 
 								<!-- Confirm Password -->
-								<p class="text-body-m text-graytext">Confirm Password</p>
+								<p class="text-body-m text-greytext">Confirm Password</p>
 								<label for="passwordConfirm" class="input-label -mt-2">
 									<!-- Pswd input -->
 									<input

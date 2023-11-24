@@ -103,10 +103,10 @@ body {
 		@apply relative flex w-full flex-col gap-1;
 	}
 	.input-large {
-		@apply text-body-m w-full rounded-[8px] border-[#3C4547] bg-transparent py-[15px] px-5 placeholder:text-graytext focus:border-lightgreen focus:ring-0 focus:ring-offset-0;
+		@apply text-body-m w-full rounded-[8px] border-[#3C4547] bg-transparent py-[15px] px-5 placeholder:text-greytext focus:border-lightgreen focus:ring-0 focus:ring-offset-0;
 	}
 	.input-small {
-		@apply text-body-s w-full rounded-[8px] border-[#3C4547] bg-transparent py-2 px-3 placeholder:text-graytext focus:border-lightgreen focus:ring-0 focus:ring-offset-0;
+		@apply text-body-s w-full rounded-[8px] border-[#3C4547] bg-transparent py-2 px-3 placeholder:text-greytext focus:border-lightgreen focus:ring-0 focus:ring-offset-0;
 	}
 
 	/* Market Status */
@@ -122,7 +122,7 @@ body {
 
 	/* Tournament-Button */
 	.tournament-button {
-		@apply text-body-xs-medium sm:text-body-x flex max-w-fit items-center justify-center gap-2 rounded-lg border border-transparent bg-darkgray p-3 uppercase hover:border-lightgreen sm:p-2;
+		@apply text-body-xs-medium sm:text-body-x flex max-w-fit items-center justify-center gap-2 rounded-lg border border-transparent bg-darkgrey p-3 uppercase hover:border-lightgreen sm:p-2;
 	}
 	.tournament-button.active {
 		@apply border-lightgreen;
@@ -130,18 +130,19 @@ body {
 
 	/* Live Table Row */
 	.live-row {
-		@apply relative;
+		@apply relative flex cursor-pointer gap-5 overflow-hidden rounded-lg px-[10px] py-[5px] hover:bg-lightgrey;
 	}
-	.live-row.low {
+	.live-row.live-row-green {
+		@apply after:absolute after:top-0 after:bottom-0 after:w-full after:rotate-180 after:bg-green-gradient after:opacity-10;
+	}
+	.live-row.live-row-red {
 		@apply after:absolute after:top-0 after:bottom-0 after:w-full after:rotate-180 after:bg-red-gradient after:opacity-10;
 	}
-	.live-row.high {
-		@apply after:absolute after:top-0 after:bottom-0 after:w-full after:rotate-180 after:bg-green-gradient after:opacity-10;
+	.live-row.live-row-grey {
+		@apply after:absolute after:top-0 after:bottom-0 after:w-full after:rotate-180 after:bg-grey-gradient after:opacity-10;
 	}
 }
 
-@layer utilities {
-}
 /* Table */
 table tr td:last-child {
 	border-radius: 0 10px 10px 0;
