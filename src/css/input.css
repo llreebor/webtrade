@@ -91,8 +91,11 @@ body {
 	.btn-small {
 		@apply text-body-s-medium p-[9px];
 	}
-	.btn-reset {
+	.btn-blue {
 		@apply bg-lightblue transition-colors hover:bg-lightblue-hovered;
+	}
+	.btn-red {
+		@apply bg-lightred transition-colors hover:bg-lightred-hovered;
 	}
 
 	/* Form Items */
@@ -130,9 +133,10 @@ body {
 		@apply relative;
 	}
 	.live-row.low {
-		/* @apply bg-green-gradient; */
+		@apply after:absolute after:top-0 after:bottom-0 after:w-full after:rotate-180 after:bg-red-gradient after:opacity-10;
 	}
 	.live-row.high {
+		@apply after:absolute after:top-0 after:bottom-0 after:w-full after:rotate-180 after:bg-green-gradient after:opacity-10;
 	}
 }
 

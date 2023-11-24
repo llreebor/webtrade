@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Admin Trade | OOFTrade</title>
+		<title>User Trade | OOFTrade</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -358,13 +358,23 @@
 										class="text-body-xs border-b border-b-table-border text-graytext"
 									>
 										<tr>
-											<th class="py-[5px] px-[10px] text-center">Bid</th>
 											<th
-												class="border-x border-x-table-border py-[5px] px-[10px] text-center"
+												class="border-r border-r-table-border py-[5px] px-2 text-center text-white"
+											>
+												My Bid
+											</th>
+											<th class="py-[5px] px-2 text-center">Bid</th>
+											<th
+												class="border-x border-x-table-border py-[5px] px-2 text-center"
 											>
 												Price
 											</th>
-											<th class="py-[5px] px-[10px] text-center">Ask</th>
+											<th class="py-[5px] px-2 text-center">Ask</th>
+											<th
+												class="border-l border-l-table-border py-[5px] px-2 text-center text-white"
+											>
+												My Ask
+											</th>
 										</tr>
 									</thead>
 									<tbody
@@ -373,189 +383,1007 @@
 										<tr
 											class="overflow-auto rounded-lg border-y border-y-table-border"
 										>
-											<td class="text-center leading-7">3</td>
+											<td class="text-center leading-7">
+												<div
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+												>
+													<button class="group absolute right-[2px] top-[2px]">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="8"
+															height="8"
+															viewBox="0 0 8 8"
+															fill="none"
+														>
+															<path
+																class="group-hover:fill-lightgreen"
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M7.06888 1.63834C7.26415 1.44307 7.26415 1.12649 7.06888 0.931228C6.87362 0.735966 6.55704 0.735966 6.36178 0.931228L4.19238 3.10063L2.02297 0.931222C1.82771 0.73596 1.51113 0.735961 1.31587 0.931222C1.1206 1.12648 1.1206 1.44307 1.31587 1.63833L3.48527 3.80773L1.31587 5.97713C1.1206 6.17239 1.1206 6.48897 1.31587 6.68424C1.51113 6.8795 1.82771 6.8795 2.02297 6.68424L4.19237 4.51484L6.36178 6.68424C6.55704 6.8795 6.87362 6.8795 7.06889 6.68424C7.26415 6.48898 7.26415 6.1724 7.06889 5.97713L4.89948 3.80774L7.06888 1.63834Z"
+																fill="#A8ABAD"
+															/>
+														</svg>
+													</button>
+													<span>5</span>
+												</div>
+											</td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												3
+											</td>
 											<td
 												class="border-x border-x-table-border text-center leading-7"
 											>
 												73.5
 											</td>
-											<td class="text-center leading-7"></td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												73.5
+											</td>
+											<td class="text-center leading-7">
+												<div
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+												>
+													<button class="group absolute right-[2px] top-[2px]">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="8"
+															height="8"
+															viewBox="0 0 8 8"
+															fill="none"
+														>
+															<path
+																class="group-hover:fill-lightgreen"
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M7.06888 1.63834C7.26415 1.44307 7.26415 1.12649 7.06888 0.931228C6.87362 0.735966 6.55704 0.735966 6.36178 0.931228L4.19238 3.10063L2.02297 0.931222C1.82771 0.73596 1.51113 0.735961 1.31587 0.931222C1.1206 1.12648 1.1206 1.44307 1.31587 1.63833L3.48527 3.80773L1.31587 5.97713C1.1206 6.17239 1.1206 6.48897 1.31587 6.68424C1.51113 6.8795 1.82771 6.8795 2.02297 6.68424L4.19237 4.51484L6.36178 6.68424C6.55704 6.8795 6.87362 6.8795 7.06889 6.68424C7.26415 6.48898 7.26415 6.1724 7.06889 5.97713L4.89948 3.80774L7.06888 1.63834Z"
+																fill="#A8ABAD"
+															/>
+														</svg>
+													</button>
+													<span>5</span>
+												</div>
+											</td>
 										</tr>
 										<tr
 											class="overflow-auto rounded-lg border-y border-y-table-border"
 										>
-											<td class="text-center leading-7"></td>
+											<td class="text-center leading-7">
+												<div
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+												>
+													<button class="group absolute right-[2px] top-[2px]">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="8"
+															height="8"
+															viewBox="0 0 8 8"
+															fill="none"
+														>
+															<path
+																class="group-hover:fill-lightgreen"
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M7.06888 1.63834C7.26415 1.44307 7.26415 1.12649 7.06888 0.931228C6.87362 0.735966 6.55704 0.735966 6.36178 0.931228L4.19238 3.10063L2.02297 0.931222C1.82771 0.73596 1.51113 0.735961 1.31587 0.931222C1.1206 1.12648 1.1206 1.44307 1.31587 1.63833L3.48527 3.80773L1.31587 5.97713C1.1206 6.17239 1.1206 6.48897 1.31587 6.68424C1.51113 6.8795 1.82771 6.8795 2.02297 6.68424L4.19237 4.51484L6.36178 6.68424C6.55704 6.8795 6.87362 6.8795 7.06889 6.68424C7.26415 6.48898 7.26415 6.1724 7.06889 5.97713L4.89948 3.80774L7.06888 1.63834Z"
+																fill="#A8ABAD"
+															/>
+														</svg>
+													</button>
+													<span>5</span>
+												</div>
+											</td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												3
+											</td>
 											<td
 												class="border-x border-x-table-border text-center leading-7"
 											>
 												73.5
 											</td>
-											<td class="text-center leading-7"></td>
-										</tr>
-
-										<tr
-											class="overflow-auto rounded-lg border-y border-y-table-border"
-										>
-											<td class="text-center leading-7"></td>
 											<td
 												class="border-x border-x-table-border text-center leading-7"
 											>
 												73.5
 											</td>
-											<td class="text-center leading-7"></td>
-										</tr>
-
-										<tr
-											class="overflow-auto rounded-lg border-y border-y-table-border"
-										>
-											<td class="text-center leading-7">3</td>
-											<td
-												class="border-x border-x-table-border text-center leading-7"
-											>
-												73.5
+											<td class="text-center leading-7">
+												<div
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+												>
+													<button class="group absolute right-[2px] top-[2px]">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="8"
+															height="8"
+															viewBox="0 0 8 8"
+															fill="none"
+														>
+															<path
+																class="group-hover:fill-lightgreen"
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M7.06888 1.63834C7.26415 1.44307 7.26415 1.12649 7.06888 0.931228C6.87362 0.735966 6.55704 0.735966 6.36178 0.931228L4.19238 3.10063L2.02297 0.931222C1.82771 0.73596 1.51113 0.735961 1.31587 0.931222C1.1206 1.12648 1.1206 1.44307 1.31587 1.63833L3.48527 3.80773L1.31587 5.97713C1.1206 6.17239 1.1206 6.48897 1.31587 6.68424C1.51113 6.8795 1.82771 6.8795 2.02297 6.68424L4.19237 4.51484L6.36178 6.68424C6.55704 6.8795 6.87362 6.8795 7.06889 6.68424C7.26415 6.48898 7.26415 6.1724 7.06889 5.97713L4.89948 3.80774L7.06888 1.63834Z"
+																fill="#A8ABAD"
+															/>
+														</svg>
+													</button>
+													<span>5</span>
+												</div>
 											</td>
-											<td class="text-center leading-7"></td>
-										</tr>
-
-										<tr
-											class="overflow-auto rounded-lg border-y border-y-table-border"
-										>
-											<td class="text-center leading-7">3</td>
-											<td
-												class="border-x border-x-table-border text-center leading-7"
-											>
-												73.5
-											</td>
-											<td class="text-center leading-7"></td>
-										</tr>
-										<tr
-											class="overflow-auto rounded-lg border-y border-y-table-border"
-										>
-											<td class="text-center leading-7"></td>
-											<td
-												class="border-x border-x-table-border text-center leading-7"
-											>
-												73.5
-											</td>
-											<td class="text-center leading-7"></td>
-										</tr>
-
-										<tr
-											class="overflow-auto rounded-lg border-y border-y-table-border"
-										>
-											<td class="text-center leading-7"></td>
-											<td
-												class="border-x border-x-table-border text-center leading-7"
-											>
-												73.5
-											</td>
-											<td class="text-center leading-7"></td>
-										</tr>
-
-										<tr
-											class="overflow-auto rounded-lg border-y border-y-table-border"
-										>
-											<td class="text-center leading-7">3</td>
-											<td
-												class="border-x border-x-table-border text-center leading-7"
-											>
-												73.5
-											</td>
-											<td class="text-center leading-7"></td>
-										</tr>
-
-										<tr
-											class="overflow-auto rounded-lg border-y border-y-table-border"
-										>
-											<td class="text-center leading-7">3</td>
-											<td
-												class="border-x border-x-table-border text-center leading-7"
-											>
-												73.5
-											</td>
-											<td class="text-center leading-7"></td>
 										</tr>
 										<tr
 											class="overflow-auto rounded-lg border-y border-y-table-border"
 										>
-											<td class="text-center leading-7"></td>
+											<td class="text-center leading-7">
+												<div
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+												>
+													<button class="group absolute right-[2px] top-[2px]">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="8"
+															height="8"
+															viewBox="0 0 8 8"
+															fill="none"
+														>
+															<path
+																class="group-hover:fill-lightgreen"
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M7.06888 1.63834C7.26415 1.44307 7.26415 1.12649 7.06888 0.931228C6.87362 0.735966 6.55704 0.735966 6.36178 0.931228L4.19238 3.10063L2.02297 0.931222C1.82771 0.73596 1.51113 0.735961 1.31587 0.931222C1.1206 1.12648 1.1206 1.44307 1.31587 1.63833L3.48527 3.80773L1.31587 5.97713C1.1206 6.17239 1.1206 6.48897 1.31587 6.68424C1.51113 6.8795 1.82771 6.8795 2.02297 6.68424L4.19237 4.51484L6.36178 6.68424C6.55704 6.8795 6.87362 6.8795 7.06889 6.68424C7.26415 6.48898 7.26415 6.1724 7.06889 5.97713L4.89948 3.80774L7.06888 1.63834Z"
+																fill="#A8ABAD"
+															/>
+														</svg>
+													</button>
+													<span>5</span>
+												</div>
+											</td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												3
+											</td>
 											<td
 												class="border-x border-x-table-border text-center leading-7"
 											>
 												73.5
 											</td>
-											<td class="text-center leading-7"></td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												73.5
+											</td>
+											<td class="text-center leading-7">
+												<div
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+												>
+													<button class="group absolute right-[2px] top-[2px]">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="8"
+															height="8"
+															viewBox="0 0 8 8"
+															fill="none"
+														>
+															<path
+																class="group-hover:fill-lightgreen"
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M7.06888 1.63834C7.26415 1.44307 7.26415 1.12649 7.06888 0.931228C6.87362 0.735966 6.55704 0.735966 6.36178 0.931228L4.19238 3.10063L2.02297 0.931222C1.82771 0.73596 1.51113 0.735961 1.31587 0.931222C1.1206 1.12648 1.1206 1.44307 1.31587 1.63833L3.48527 3.80773L1.31587 5.97713C1.1206 6.17239 1.1206 6.48897 1.31587 6.68424C1.51113 6.8795 1.82771 6.8795 2.02297 6.68424L4.19237 4.51484L6.36178 6.68424C6.55704 6.8795 6.87362 6.8795 7.06889 6.68424C7.26415 6.48898 7.26415 6.1724 7.06889 5.97713L4.89948 3.80774L7.06888 1.63834Z"
+																fill="#A8ABAD"
+															/>
+														</svg>
+													</button>
+													<span>5</span>
+												</div>
+											</td>
 										</tr>
-
 										<tr
 											class="overflow-auto rounded-lg border-y border-y-table-border"
 										>
-											<td class="text-center leading-7"></td>
+											<td class="text-center leading-7">
+												<div
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+												>
+													<button class="group absolute right-[2px] top-[2px]">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="8"
+															height="8"
+															viewBox="0 0 8 8"
+															fill="none"
+														>
+															<path
+																class="group-hover:fill-lightgreen"
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M7.06888 1.63834C7.26415 1.44307 7.26415 1.12649 7.06888 0.931228C6.87362 0.735966 6.55704 0.735966 6.36178 0.931228L4.19238 3.10063L2.02297 0.931222C1.82771 0.73596 1.51113 0.735961 1.31587 0.931222C1.1206 1.12648 1.1206 1.44307 1.31587 1.63833L3.48527 3.80773L1.31587 5.97713C1.1206 6.17239 1.1206 6.48897 1.31587 6.68424C1.51113 6.8795 1.82771 6.8795 2.02297 6.68424L4.19237 4.51484L6.36178 6.68424C6.55704 6.8795 6.87362 6.8795 7.06889 6.68424C7.26415 6.48898 7.26415 6.1724 7.06889 5.97713L4.89948 3.80774L7.06888 1.63834Z"
+																fill="#A8ABAD"
+															/>
+														</svg>
+													</button>
+													<span>5</span>
+												</div>
+											</td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												3
+											</td>
 											<td
 												class="border-x border-x-table-border text-center leading-7"
 											>
 												73.5
 											</td>
-											<td class="text-center leading-7"></td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												73.5
+											</td>
+											<td class="text-center leading-7">
+												<div
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+												>
+													<button class="group absolute right-[2px] top-[2px]">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="8"
+															height="8"
+															viewBox="0 0 8 8"
+															fill="none"
+														>
+															<path
+																class="group-hover:fill-lightgreen"
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M7.06888 1.63834C7.26415 1.44307 7.26415 1.12649 7.06888 0.931228C6.87362 0.735966 6.55704 0.735966 6.36178 0.931228L4.19238 3.10063L2.02297 0.931222C1.82771 0.73596 1.51113 0.735961 1.31587 0.931222C1.1206 1.12648 1.1206 1.44307 1.31587 1.63833L3.48527 3.80773L1.31587 5.97713C1.1206 6.17239 1.1206 6.48897 1.31587 6.68424C1.51113 6.8795 1.82771 6.8795 2.02297 6.68424L4.19237 4.51484L6.36178 6.68424C6.55704 6.8795 6.87362 6.8795 7.06889 6.68424C7.26415 6.48898 7.26415 6.1724 7.06889 5.97713L4.89948 3.80774L7.06888 1.63834Z"
+																fill="#A8ABAD"
+															/>
+														</svg>
+													</button>
+													<span>5</span>
+												</div>
+											</td>
 										</tr>
-
 										<tr
 											class="overflow-auto rounded-lg border-y border-y-table-border"
 										>
-											<td class="text-center leading-7">3</td>
+											<td class="text-center leading-7">
+												<div
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+												>
+													<button class="group absolute right-[2px] top-[2px]">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="8"
+															height="8"
+															viewBox="0 0 8 8"
+															fill="none"
+														>
+															<path
+																class="group-hover:fill-lightgreen"
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M7.06888 1.63834C7.26415 1.44307 7.26415 1.12649 7.06888 0.931228C6.87362 0.735966 6.55704 0.735966 6.36178 0.931228L4.19238 3.10063L2.02297 0.931222C1.82771 0.73596 1.51113 0.735961 1.31587 0.931222C1.1206 1.12648 1.1206 1.44307 1.31587 1.63833L3.48527 3.80773L1.31587 5.97713C1.1206 6.17239 1.1206 6.48897 1.31587 6.68424C1.51113 6.8795 1.82771 6.8795 2.02297 6.68424L4.19237 4.51484L6.36178 6.68424C6.55704 6.8795 6.87362 6.8795 7.06889 6.68424C7.26415 6.48898 7.26415 6.1724 7.06889 5.97713L4.89948 3.80774L7.06888 1.63834Z"
+																fill="#A8ABAD"
+															/>
+														</svg>
+													</button>
+													<span>5</span>
+												</div>
+											</td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												3
+											</td>
 											<td
 												class="border-x border-x-table-border text-center leading-7"
 											>
 												73.5
 											</td>
-											<td class="text-center leading-7"></td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												73.5
+											</td>
+											<td class="text-center leading-7">
+												<div
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+												>
+													<button class="group absolute right-[2px] top-[2px]">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="8"
+															height="8"
+															viewBox="0 0 8 8"
+															fill="none"
+														>
+															<path
+																class="group-hover:fill-lightgreen"
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M7.06888 1.63834C7.26415 1.44307 7.26415 1.12649 7.06888 0.931228C6.87362 0.735966 6.55704 0.735966 6.36178 0.931228L4.19238 3.10063L2.02297 0.931222C1.82771 0.73596 1.51113 0.735961 1.31587 0.931222C1.1206 1.12648 1.1206 1.44307 1.31587 1.63833L3.48527 3.80773L1.31587 5.97713C1.1206 6.17239 1.1206 6.48897 1.31587 6.68424C1.51113 6.8795 1.82771 6.8795 2.02297 6.68424L4.19237 4.51484L6.36178 6.68424C6.55704 6.8795 6.87362 6.8795 7.06889 6.68424C7.26415 6.48898 7.26415 6.1724 7.06889 5.97713L4.89948 3.80774L7.06888 1.63834Z"
+																fill="#A8ABAD"
+															/>
+														</svg>
+													</button>
+													<span>5</span>
+												</div>
+											</td>
 										</tr>
-
 										<tr
 											class="overflow-auto rounded-lg border-y border-y-table-border"
 										>
-											<td class="text-center leading-7">3</td>
+											<td class="text-center leading-7">
+												<div
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+												>
+													<button class="group absolute right-[2px] top-[2px]">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="8"
+															height="8"
+															viewBox="0 0 8 8"
+															fill="none"
+														>
+															<path
+																class="group-hover:fill-lightgreen"
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M7.06888 1.63834C7.26415 1.44307 7.26415 1.12649 7.06888 0.931228C6.87362 0.735966 6.55704 0.735966 6.36178 0.931228L4.19238 3.10063L2.02297 0.931222C1.82771 0.73596 1.51113 0.735961 1.31587 0.931222C1.1206 1.12648 1.1206 1.44307 1.31587 1.63833L3.48527 3.80773L1.31587 5.97713C1.1206 6.17239 1.1206 6.48897 1.31587 6.68424C1.51113 6.8795 1.82771 6.8795 2.02297 6.68424L4.19237 4.51484L6.36178 6.68424C6.55704 6.8795 6.87362 6.8795 7.06889 6.68424C7.26415 6.48898 7.26415 6.1724 7.06889 5.97713L4.89948 3.80774L7.06888 1.63834Z"
+																fill="#A8ABAD"
+															/>
+														</svg>
+													</button>
+													<span>5</span>
+												</div>
+											</td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												3
+											</td>
 											<td
 												class="border-x border-x-table-border text-center leading-7"
 											>
 												73.5
 											</td>
-											<td class="text-center leading-7"></td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												73.5
+											</td>
+											<td class="text-center leading-7">
+												<div
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+												>
+													<button class="group absolute right-[2px] top-[2px]">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="8"
+															height="8"
+															viewBox="0 0 8 8"
+															fill="none"
+														>
+															<path
+																class="group-hover:fill-lightgreen"
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M7.06888 1.63834C7.26415 1.44307 7.26415 1.12649 7.06888 0.931228C6.87362 0.735966 6.55704 0.735966 6.36178 0.931228L4.19238 3.10063L2.02297 0.931222C1.82771 0.73596 1.51113 0.735961 1.31587 0.931222C1.1206 1.12648 1.1206 1.44307 1.31587 1.63833L3.48527 3.80773L1.31587 5.97713C1.1206 6.17239 1.1206 6.48897 1.31587 6.68424C1.51113 6.8795 1.82771 6.8795 2.02297 6.68424L4.19237 4.51484L6.36178 6.68424C6.55704 6.8795 6.87362 6.8795 7.06889 6.68424C7.26415 6.48898 7.26415 6.1724 7.06889 5.97713L4.89948 3.80774L7.06888 1.63834Z"
+																fill="#A8ABAD"
+															/>
+														</svg>
+													</button>
+													<span>5</span>
+												</div>
+											</td>
 										</tr>
 										<tr
 											class="overflow-auto rounded-lg border-y border-y-table-border"
 										>
-											<td class="text-center leading-7"></td>
+											<td class="text-center leading-7">
+												<div
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+												>
+													<button class="group absolute right-[2px] top-[2px]">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="8"
+															height="8"
+															viewBox="0 0 8 8"
+															fill="none"
+														>
+															<path
+																class="group-hover:fill-lightgreen"
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M7.06888 1.63834C7.26415 1.44307 7.26415 1.12649 7.06888 0.931228C6.87362 0.735966 6.55704 0.735966 6.36178 0.931228L4.19238 3.10063L2.02297 0.931222C1.82771 0.73596 1.51113 0.735961 1.31587 0.931222C1.1206 1.12648 1.1206 1.44307 1.31587 1.63833L3.48527 3.80773L1.31587 5.97713C1.1206 6.17239 1.1206 6.48897 1.31587 6.68424C1.51113 6.8795 1.82771 6.8795 2.02297 6.68424L4.19237 4.51484L6.36178 6.68424C6.55704 6.8795 6.87362 6.8795 7.06889 6.68424C7.26415 6.48898 7.26415 6.1724 7.06889 5.97713L4.89948 3.80774L7.06888 1.63834Z"
+																fill="#A8ABAD"
+															/>
+														</svg>
+													</button>
+													<span>5</span>
+												</div>
+											</td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												3
+											</td>
 											<td
 												class="border-x border-x-table-border text-center leading-7"
 											>
 												73.5
 											</td>
-											<td class="text-center leading-7"></td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												73.5
+											</td>
+											<td class="text-center leading-7">
+												<div
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+												>
+													<button class="group absolute right-[2px] top-[2px]">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="8"
+															height="8"
+															viewBox="0 0 8 8"
+															fill="none"
+														>
+															<path
+																class="group-hover:fill-lightgreen"
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M7.06888 1.63834C7.26415 1.44307 7.26415 1.12649 7.06888 0.931228C6.87362 0.735966 6.55704 0.735966 6.36178 0.931228L4.19238 3.10063L2.02297 0.931222C1.82771 0.73596 1.51113 0.735961 1.31587 0.931222C1.1206 1.12648 1.1206 1.44307 1.31587 1.63833L3.48527 3.80773L1.31587 5.97713C1.1206 6.17239 1.1206 6.48897 1.31587 6.68424C1.51113 6.8795 1.82771 6.8795 2.02297 6.68424L4.19237 4.51484L6.36178 6.68424C6.55704 6.8795 6.87362 6.8795 7.06889 6.68424C7.26415 6.48898 7.26415 6.1724 7.06889 5.97713L4.89948 3.80774L7.06888 1.63834Z"
+																fill="#A8ABAD"
+															/>
+														</svg>
+													</button>
+													<span>5</span>
+												</div>
+											</td>
 										</tr>
-
 										<tr
 											class="overflow-auto rounded-lg border-y border-y-table-border"
 										>
-											<td class="text-center leading-7"></td>
+											<td class="text-center leading-7">
+												<div
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+												>
+													<button class="group absolute right-[2px] top-[2px]">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="8"
+															height="8"
+															viewBox="0 0 8 8"
+															fill="none"
+														>
+															<path
+																class="group-hover:fill-lightgreen"
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M7.06888 1.63834C7.26415 1.44307 7.26415 1.12649 7.06888 0.931228C6.87362 0.735966 6.55704 0.735966 6.36178 0.931228L4.19238 3.10063L2.02297 0.931222C1.82771 0.73596 1.51113 0.735961 1.31587 0.931222C1.1206 1.12648 1.1206 1.44307 1.31587 1.63833L3.48527 3.80773L1.31587 5.97713C1.1206 6.17239 1.1206 6.48897 1.31587 6.68424C1.51113 6.8795 1.82771 6.8795 2.02297 6.68424L4.19237 4.51484L6.36178 6.68424C6.55704 6.8795 6.87362 6.8795 7.06889 6.68424C7.26415 6.48898 7.26415 6.1724 7.06889 5.97713L4.89948 3.80774L7.06888 1.63834Z"
+																fill="#A8ABAD"
+															/>
+														</svg>
+													</button>
+													<span>5</span>
+												</div>
+											</td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												3
+											</td>
 											<td
 												class="border-x border-x-table-border text-center leading-7"
 											>
 												73.5
 											</td>
-											<td class="text-center leading-7"></td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												73.5
+											</td>
+											<td class="text-center leading-7">
+												<div
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+												>
+													<button class="group absolute right-[2px] top-[2px]">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="8"
+															height="8"
+															viewBox="0 0 8 8"
+															fill="none"
+														>
+															<path
+																class="group-hover:fill-lightgreen"
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M7.06888 1.63834C7.26415 1.44307 7.26415 1.12649 7.06888 0.931228C6.87362 0.735966 6.55704 0.735966 6.36178 0.931228L4.19238 3.10063L2.02297 0.931222C1.82771 0.73596 1.51113 0.735961 1.31587 0.931222C1.1206 1.12648 1.1206 1.44307 1.31587 1.63833L3.48527 3.80773L1.31587 5.97713C1.1206 6.17239 1.1206 6.48897 1.31587 6.68424C1.51113 6.8795 1.82771 6.8795 2.02297 6.68424L4.19237 4.51484L6.36178 6.68424C6.55704 6.8795 6.87362 6.8795 7.06889 6.68424C7.26415 6.48898 7.26415 6.1724 7.06889 5.97713L4.89948 3.80774L7.06888 1.63834Z"
+																fill="#A8ABAD"
+															/>
+														</svg>
+													</button>
+													<span>5</span>
+												</div>
+											</td>
 										</tr>
-
 										<tr
 											class="overflow-auto rounded-lg border-y border-y-table-border"
 										>
-											<td class="text-center leading-7">3</td>
+											<td class="text-center leading-7">
+												<div
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+												>
+													<button class="group absolute right-[2px] top-[2px]">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="8"
+															height="8"
+															viewBox="0 0 8 8"
+															fill="none"
+														>
+															<path
+																class="group-hover:fill-lightgreen"
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M7.06888 1.63834C7.26415 1.44307 7.26415 1.12649 7.06888 0.931228C6.87362 0.735966 6.55704 0.735966 6.36178 0.931228L4.19238 3.10063L2.02297 0.931222C1.82771 0.73596 1.51113 0.735961 1.31587 0.931222C1.1206 1.12648 1.1206 1.44307 1.31587 1.63833L3.48527 3.80773L1.31587 5.97713C1.1206 6.17239 1.1206 6.48897 1.31587 6.68424C1.51113 6.8795 1.82771 6.8795 2.02297 6.68424L4.19237 4.51484L6.36178 6.68424C6.55704 6.8795 6.87362 6.8795 7.06889 6.68424C7.26415 6.48898 7.26415 6.1724 7.06889 5.97713L4.89948 3.80774L7.06888 1.63834Z"
+																fill="#A8ABAD"
+															/>
+														</svg>
+													</button>
+													<span>5</span>
+												</div>
+											</td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												3
+											</td>
 											<td
 												class="border-x border-x-table-border text-center leading-7"
 											>
 												73.5
 											</td>
-											<td class="text-center leading-7"></td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												73.5
+											</td>
+											<td class="text-center leading-7">
+												<div
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+												>
+													<button class="group absolute right-[2px] top-[2px]">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="8"
+															height="8"
+															viewBox="0 0 8 8"
+															fill="none"
+														>
+															<path
+																class="group-hover:fill-lightgreen"
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M7.06888 1.63834C7.26415 1.44307 7.26415 1.12649 7.06888 0.931228C6.87362 0.735966 6.55704 0.735966 6.36178 0.931228L4.19238 3.10063L2.02297 0.931222C1.82771 0.73596 1.51113 0.735961 1.31587 0.931222C1.1206 1.12648 1.1206 1.44307 1.31587 1.63833L3.48527 3.80773L1.31587 5.97713C1.1206 6.17239 1.1206 6.48897 1.31587 6.68424C1.51113 6.8795 1.82771 6.8795 2.02297 6.68424L4.19237 4.51484L6.36178 6.68424C6.55704 6.8795 6.87362 6.8795 7.06889 6.68424C7.26415 6.48898 7.26415 6.1724 7.06889 5.97713L4.89948 3.80774L7.06888 1.63834Z"
+																fill="#A8ABAD"
+															/>
+														</svg>
+													</button>
+													<span>5</span>
+												</div>
+											</td>
+										</tr>
+										<tr
+											class="overflow-auto rounded-lg border-y border-y-table-border"
+										>
+											<td class="text-center leading-7">
+												<div
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+												>
+													<button class="group absolute right-[2px] top-[2px]">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="8"
+															height="8"
+															viewBox="0 0 8 8"
+															fill="none"
+														>
+															<path
+																class="group-hover:fill-lightgreen"
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M7.06888 1.63834C7.26415 1.44307 7.26415 1.12649 7.06888 0.931228C6.87362 0.735966 6.55704 0.735966 6.36178 0.931228L4.19238 3.10063L2.02297 0.931222C1.82771 0.73596 1.51113 0.735961 1.31587 0.931222C1.1206 1.12648 1.1206 1.44307 1.31587 1.63833L3.48527 3.80773L1.31587 5.97713C1.1206 6.17239 1.1206 6.48897 1.31587 6.68424C1.51113 6.8795 1.82771 6.8795 2.02297 6.68424L4.19237 4.51484L6.36178 6.68424C6.55704 6.8795 6.87362 6.8795 7.06889 6.68424C7.26415 6.48898 7.26415 6.1724 7.06889 5.97713L4.89948 3.80774L7.06888 1.63834Z"
+																fill="#A8ABAD"
+															/>
+														</svg>
+													</button>
+													<span>5</span>
+												</div>
+											</td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												3
+											</td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												73.5
+											</td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												73.5
+											</td>
+											<td class="text-center leading-7">
+												<div
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+												>
+													<button class="group absolute right-[2px] top-[2px]">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="8"
+															height="8"
+															viewBox="0 0 8 8"
+															fill="none"
+														>
+															<path
+																class="group-hover:fill-lightgreen"
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M7.06888 1.63834C7.26415 1.44307 7.26415 1.12649 7.06888 0.931228C6.87362 0.735966 6.55704 0.735966 6.36178 0.931228L4.19238 3.10063L2.02297 0.931222C1.82771 0.73596 1.51113 0.735961 1.31587 0.931222C1.1206 1.12648 1.1206 1.44307 1.31587 1.63833L3.48527 3.80773L1.31587 5.97713C1.1206 6.17239 1.1206 6.48897 1.31587 6.68424C1.51113 6.8795 1.82771 6.8795 2.02297 6.68424L4.19237 4.51484L6.36178 6.68424C6.55704 6.8795 6.87362 6.8795 7.06889 6.68424C7.26415 6.48898 7.26415 6.1724 7.06889 5.97713L4.89948 3.80774L7.06888 1.63834Z"
+																fill="#A8ABAD"
+															/>
+														</svg>
+													</button>
+													<span>5</span>
+												</div>
+											</td>
+										</tr>
+										<tr
+											class="overflow-auto rounded-lg border-y border-y-table-border"
+										>
+											<td class="text-center leading-7">
+												<div
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+												>
+													<button class="group absolute right-[2px] top-[2px]">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="8"
+															height="8"
+															viewBox="0 0 8 8"
+															fill="none"
+														>
+															<path
+																class="group-hover:fill-lightgreen"
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M7.06888 1.63834C7.26415 1.44307 7.26415 1.12649 7.06888 0.931228C6.87362 0.735966 6.55704 0.735966 6.36178 0.931228L4.19238 3.10063L2.02297 0.931222C1.82771 0.73596 1.51113 0.735961 1.31587 0.931222C1.1206 1.12648 1.1206 1.44307 1.31587 1.63833L3.48527 3.80773L1.31587 5.97713C1.1206 6.17239 1.1206 6.48897 1.31587 6.68424C1.51113 6.8795 1.82771 6.8795 2.02297 6.68424L4.19237 4.51484L6.36178 6.68424C6.55704 6.8795 6.87362 6.8795 7.06889 6.68424C7.26415 6.48898 7.26415 6.1724 7.06889 5.97713L4.89948 3.80774L7.06888 1.63834Z"
+																fill="#A8ABAD"
+															/>
+														</svg>
+													</button>
+													<span>5</span>
+												</div>
+											</td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												3
+											</td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												73.5
+											</td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												73.5
+											</td>
+											<td class="text-center leading-7">
+												<div
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+												>
+													<button class="group absolute right-[2px] top-[2px]">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="8"
+															height="8"
+															viewBox="0 0 8 8"
+															fill="none"
+														>
+															<path
+																class="group-hover:fill-lightgreen"
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M7.06888 1.63834C7.26415 1.44307 7.26415 1.12649 7.06888 0.931228C6.87362 0.735966 6.55704 0.735966 6.36178 0.931228L4.19238 3.10063L2.02297 0.931222C1.82771 0.73596 1.51113 0.735961 1.31587 0.931222C1.1206 1.12648 1.1206 1.44307 1.31587 1.63833L3.48527 3.80773L1.31587 5.97713C1.1206 6.17239 1.1206 6.48897 1.31587 6.68424C1.51113 6.8795 1.82771 6.8795 2.02297 6.68424L4.19237 4.51484L6.36178 6.68424C6.55704 6.8795 6.87362 6.8795 7.06889 6.68424C7.26415 6.48898 7.26415 6.1724 7.06889 5.97713L4.89948 3.80774L7.06888 1.63834Z"
+																fill="#A8ABAD"
+															/>
+														</svg>
+													</button>
+													<span>5</span>
+												</div>
+											</td>
+										</tr>
+										<tr
+											class="overflow-auto rounded-lg border-y border-y-table-border"
+										>
+											<td class="text-center leading-7">
+												<div
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+												>
+													<button class="group absolute right-[2px] top-[2px]">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="8"
+															height="8"
+															viewBox="0 0 8 8"
+															fill="none"
+														>
+															<path
+																class="group-hover:fill-lightgreen"
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M7.06888 1.63834C7.26415 1.44307 7.26415 1.12649 7.06888 0.931228C6.87362 0.735966 6.55704 0.735966 6.36178 0.931228L4.19238 3.10063L2.02297 0.931222C1.82771 0.73596 1.51113 0.735961 1.31587 0.931222C1.1206 1.12648 1.1206 1.44307 1.31587 1.63833L3.48527 3.80773L1.31587 5.97713C1.1206 6.17239 1.1206 6.48897 1.31587 6.68424C1.51113 6.8795 1.82771 6.8795 2.02297 6.68424L4.19237 4.51484L6.36178 6.68424C6.55704 6.8795 6.87362 6.8795 7.06889 6.68424C7.26415 6.48898 7.26415 6.1724 7.06889 5.97713L4.89948 3.80774L7.06888 1.63834Z"
+																fill="#A8ABAD"
+															/>
+														</svg>
+													</button>
+													<span>5</span>
+												</div>
+											</td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												3
+											</td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												73.5
+											</td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												73.5
+											</td>
+											<td class="text-center leading-7">
+												<div
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+												>
+													<button class="group absolute right-[2px] top-[2px]">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="8"
+															height="8"
+															viewBox="0 0 8 8"
+															fill="none"
+														>
+															<path
+																class="group-hover:fill-lightgreen"
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M7.06888 1.63834C7.26415 1.44307 7.26415 1.12649 7.06888 0.931228C6.87362 0.735966 6.55704 0.735966 6.36178 0.931228L4.19238 3.10063L2.02297 0.931222C1.82771 0.73596 1.51113 0.735961 1.31587 0.931222C1.1206 1.12648 1.1206 1.44307 1.31587 1.63833L3.48527 3.80773L1.31587 5.97713C1.1206 6.17239 1.1206 6.48897 1.31587 6.68424C1.51113 6.8795 1.82771 6.8795 2.02297 6.68424L4.19237 4.51484L6.36178 6.68424C6.55704 6.8795 6.87362 6.8795 7.06889 6.68424C7.26415 6.48898 7.26415 6.1724 7.06889 5.97713L4.89948 3.80774L7.06888 1.63834Z"
+																fill="#A8ABAD"
+															/>
+														</svg>
+													</button>
+													<span>5</span>
+												</div>
+											</td>
+										</tr>
+										<tr
+											class="overflow-auto rounded-lg border-y border-y-table-border"
+										>
+											<td class="text-center leading-7">
+												<div
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+												>
+													<button class="group absolute right-[2px] top-[2px]">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="8"
+															height="8"
+															viewBox="0 0 8 8"
+															fill="none"
+														>
+															<path
+																class="group-hover:fill-lightgreen"
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M7.06888 1.63834C7.26415 1.44307 7.26415 1.12649 7.06888 0.931228C6.87362 0.735966 6.55704 0.735966 6.36178 0.931228L4.19238 3.10063L2.02297 0.931222C1.82771 0.73596 1.51113 0.735961 1.31587 0.931222C1.1206 1.12648 1.1206 1.44307 1.31587 1.63833L3.48527 3.80773L1.31587 5.97713C1.1206 6.17239 1.1206 6.48897 1.31587 6.68424C1.51113 6.8795 1.82771 6.8795 2.02297 6.68424L4.19237 4.51484L6.36178 6.68424C6.55704 6.8795 6.87362 6.8795 7.06889 6.68424C7.26415 6.48898 7.26415 6.1724 7.06889 5.97713L4.89948 3.80774L7.06888 1.63834Z"
+																fill="#A8ABAD"
+															/>
+														</svg>
+													</button>
+													<span>5</span>
+												</div>
+											</td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												3
+											</td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												73.5
+											</td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												73.5
+											</td>
+											<td class="text-center leading-7">
+												<div
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+												>
+													<button class="group absolute right-[2px] top-[2px]">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="8"
+															height="8"
+															viewBox="0 0 8 8"
+															fill="none"
+														>
+															<path
+																class="group-hover:fill-lightgreen"
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M7.06888 1.63834C7.26415 1.44307 7.26415 1.12649 7.06888 0.931228C6.87362 0.735966 6.55704 0.735966 6.36178 0.931228L4.19238 3.10063L2.02297 0.931222C1.82771 0.73596 1.51113 0.735961 1.31587 0.931222C1.1206 1.12648 1.1206 1.44307 1.31587 1.63833L3.48527 3.80773L1.31587 5.97713C1.1206 6.17239 1.1206 6.48897 1.31587 6.68424C1.51113 6.8795 1.82771 6.8795 2.02297 6.68424L4.19237 4.51484L6.36178 6.68424C6.55704 6.8795 6.87362 6.8795 7.06889 6.68424C7.26415 6.48898 7.26415 6.1724 7.06889 5.97713L4.89948 3.80774L7.06888 1.63834Z"
+																fill="#A8ABAD"
+															/>
+														</svg>
+													</button>
+													<span>5</span>
+												</div>
+											</td>
+										</tr>
+										<tr
+											class="overflow-auto rounded-lg border-y border-y-table-border"
+										>
+											<td class="text-center leading-7">
+												<div
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+												>
+													<button class="group absolute right-[2px] top-[2px]">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="8"
+															height="8"
+															viewBox="0 0 8 8"
+															fill="none"
+														>
+															<path
+																class="group-hover:fill-lightgreen"
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M7.06888 1.63834C7.26415 1.44307 7.26415 1.12649 7.06888 0.931228C6.87362 0.735966 6.55704 0.735966 6.36178 0.931228L4.19238 3.10063L2.02297 0.931222C1.82771 0.73596 1.51113 0.735961 1.31587 0.931222C1.1206 1.12648 1.1206 1.44307 1.31587 1.63833L3.48527 3.80773L1.31587 5.97713C1.1206 6.17239 1.1206 6.48897 1.31587 6.68424C1.51113 6.8795 1.82771 6.8795 2.02297 6.68424L4.19237 4.51484L6.36178 6.68424C6.55704 6.8795 6.87362 6.8795 7.06889 6.68424C7.26415 6.48898 7.26415 6.1724 7.06889 5.97713L4.89948 3.80774L7.06888 1.63834Z"
+																fill="#A8ABAD"
+															/>
+														</svg>
+													</button>
+													<span>5</span>
+												</div>
+											</td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												3
+											</td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												73.5
+											</td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												73.5
+											</td>
+											<td class="text-center leading-7">
+												<div
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+												>
+													<button class="group absolute right-[2px] top-[2px]">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="8"
+															height="8"
+															viewBox="0 0 8 8"
+															fill="none"
+														>
+															<path
+																class="group-hover:fill-lightgreen"
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M7.06888 1.63834C7.26415 1.44307 7.26415 1.12649 7.06888 0.931228C6.87362 0.735966 6.55704 0.735966 6.36178 0.931228L4.19238 3.10063L2.02297 0.931222C1.82771 0.73596 1.51113 0.735961 1.31587 0.931222C1.1206 1.12648 1.1206 1.44307 1.31587 1.63833L3.48527 3.80773L1.31587 5.97713C1.1206 6.17239 1.1206 6.48897 1.31587 6.68424C1.51113 6.8795 1.82771 6.8795 2.02297 6.68424L4.19237 4.51484L6.36178 6.68424C6.55704 6.8795 6.87362 6.8795 7.06889 6.68424C7.26415 6.48898 7.26415 6.1724 7.06889 5.97713L4.89948 3.80774L7.06888 1.63834Z"
+																fill="#A8ABAD"
+															/>
+														</svg>
+													</button>
+													<span>5</span>
+												</div>
+											</td>
+										</tr>
+										<tr
+											class="overflow-auto rounded-lg border-y border-y-table-border"
+										>
+											<td class="text-center leading-7">
+												<div
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+												>
+													<button class="group absolute right-[2px] top-[2px]">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="8"
+															height="8"
+															viewBox="0 0 8 8"
+															fill="none"
+														>
+															<path
+																class="group-hover:fill-lightgreen"
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M7.06888 1.63834C7.26415 1.44307 7.26415 1.12649 7.06888 0.931228C6.87362 0.735966 6.55704 0.735966 6.36178 0.931228L4.19238 3.10063L2.02297 0.931222C1.82771 0.73596 1.51113 0.735961 1.31587 0.931222C1.1206 1.12648 1.1206 1.44307 1.31587 1.63833L3.48527 3.80773L1.31587 5.97713C1.1206 6.17239 1.1206 6.48897 1.31587 6.68424C1.51113 6.8795 1.82771 6.8795 2.02297 6.68424L4.19237 4.51484L6.36178 6.68424C6.55704 6.8795 6.87362 6.8795 7.06889 6.68424C7.26415 6.48898 7.26415 6.1724 7.06889 5.97713L4.89948 3.80774L7.06888 1.63834Z"
+																fill="#A8ABAD"
+															/>
+														</svg>
+													</button>
+													<span>5</span>
+												</div>
+											</td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												3
+											</td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												73.5
+											</td>
+											<td
+												class="border-x border-x-table-border text-center leading-7"
+											>
+												73.5
+											</td>
+											<td class="text-center leading-7">
+												<div
+													class="text-body-s relative flex h-full w-full items-center justify-center bg-lightgray leading-7"
+												>
+													<button class="group absolute right-[2px] top-[2px]">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="8"
+															height="8"
+															viewBox="0 0 8 8"
+															fill="none"
+														>
+															<path
+																class="group-hover:fill-lightgreen"
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M7.06888 1.63834C7.26415 1.44307 7.26415 1.12649 7.06888 0.931228C6.87362 0.735966 6.55704 0.735966 6.36178 0.931228L4.19238 3.10063L2.02297 0.931222C1.82771 0.73596 1.51113 0.735961 1.31587 0.931222C1.1206 1.12648 1.1206 1.44307 1.31587 1.63833L3.48527 3.80773L1.31587 5.97713C1.1206 6.17239 1.1206 6.48897 1.31587 6.68424C1.51113 6.8795 1.82771 6.8795 2.02297 6.68424L4.19237 4.51484L6.36178 6.68424C6.55704 6.8795 6.87362 6.8795 7.06889 6.68424C7.26415 6.48898 7.26415 6.1724 7.06889 5.97713L4.89948 3.80774L7.06888 1.63834Z"
+																fill="#A8ABAD"
+															/>
+														</svg>
+													</button>
+													<span>5</span>
+												</div>
+											</td>
 										</tr>
 									</tbody>
 								</table>
@@ -712,31 +1540,48 @@
 						</div>
 					</div>
 					<div class="flex flex-col gap-4">
-						<!-- Settlement -->
+						<!-- Trade -->
 						<div class="rounded-lg bg-darkgray py-4 px-6">
 							<p class="text-body-lg-m pb-3 text-left">Settlement</p>
 							<form>
-								<div class="grid grid-cols-3 gap-[2px]">
-									<div class="col-span-2 grid">
-										<label class="input-label" for="team">
+								<div class="flex gap-[2px]">
+									<div class="grid grow">
+										<label class="input-label" for="quantity">
 											<p class="text-body-xs text-graytext">Team/Player</p>
+											<p class="text-body-xs mt-[10px]">United States</p>
+										</label>
+									</div>
+									<div class="grid grow">
+										<label class="input-label" for="team">
+											<p class="text-body-xs text-graytext">Order Type</p>
 											<select
 												id="team"
 												name="team"
 												class="input-small rounded-tr-none rounded-br-none bg-[length:24px]"
 											>
-												<option value="us" selected>United State</option>
-												<option value="ge">Germany</option>
-												<option value="fr">France</option>
+												<option value="us">Market</option>
+												<option value="ge">Limit</option>
+												<option value="fr">Other</option>
 											</select>
 										</label>
 									</div>
-									<div class="col-span-1 grid">
+									<div class="grid w-[56px]">
 										<label class="input-label" for="price">
 											<p class="text-body-xs text-graytext">Price</p>
 											<input
 												id="price"
 												name="price"
+												type="text"
+												class="input-small rounded-none"
+											/>
+										</label>
+									</div>
+									<div class="grid w-[56px]">
+										<label class="input-label" for="quantity">
+											<p class="text-body-xs text-graytext">Quantity</p>
+											<input
+												id="quantity"
+												name="quantity"
 												type="text"
 												class="input-small rounded-tl-none rounded-bl-none"
 											/>
@@ -744,9 +1589,12 @@
 									</div>
 								</div>
 
-								<button class="btn btn-small mt-5" type="submit">
-									Confirm Settlement
-								</button>
+								<div class="grid grid-cols-2 gap-3">
+									<button class="btn btn-small mt-5" type="submit">Buy</button>
+									<button class="btn btn-small btn-red mt-5" type="submit">
+										Sell
+									</button>
+								</div>
 							</form>
 						</div>
 

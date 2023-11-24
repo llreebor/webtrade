@@ -26,6 +26,7 @@ module.exports = {
 				lightblue: '#5E9BF7',
 				'lightblue-hovered': '#2675EC',
 				lightred: '#FF5F73',
+				'lightred-hovered': '#F3344C',
 				lightgreen: '#69F29F',
 				'lightgreen-hovered': '#2BF87C',
 				'table-border': '#3C4547',

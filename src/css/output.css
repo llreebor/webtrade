@@ -801,7 +801,7 @@ h5 {
   padding: 9px;
 }
 
-.btn-reset {
+.btn-blue {
   --tw-bg-opacity: 1;
   background-color: rgb(94 155 247 / var(--tw-bg-opacity));
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
@@ -809,9 +809,22 @@ h5 {
   transition-duration: 150ms;
 }
 
-.btn-reset:hover {
+.btn-blue:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(38 117 236 / var(--tw-bg-opacity));
+}
+
+.btn-red {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 95 115 / var(--tw-bg-opacity));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.btn-red:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 52 76 / var(--tw-bg-opacity));
 }
 
 /* Form Items */
@@ -969,11 +982,28 @@ h5 {
   position: relative;
 }
 
-.live-row.low {
-  /* @apply bg-green-gradient; */
+.live-row.low::after {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  background-image: linear-gradient(90deg, rgba(255, 95, 115, 0.00) -5.72%, #FF5F73 30.43%, rgba(255, 95, 115, 0.00) 70.26%);
+  content: var(--tw-content);
+  opacity: 0.1;
 }
 
-.live-row.high {
+.live-row.high::after {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  background-image: linear-gradient(90deg, rgba(106, 244, 160, 0.00) -5.72%, #69F29F 30.43%, rgba(106, 244, 160, 0.00) 70.26%);
+  content: var(--tw-content);
+  opacity: 0.1;
 }
 
 .sr-only {
@@ -1207,6 +1237,10 @@ h5 {
   margin-top: 2rem;
 }
 
+.mt-\[10px\] {
+  margin-top: 10px;
+}
+
 .mt-\[30px\] {
   margin-top: 30px;
 }
@@ -1327,8 +1361,16 @@ h5 {
   height: 100vh;
 }
 
+.max-h-\[220px\] {
+  max-height: 220px;
+}
+
 .max-h-\[284px\] {
   max-height: 284px;
+}
+
+.max-h-\[300px\] {
+  max-height: 300px;
 }
 
 .max-h-\[429px\] {
@@ -1337,6 +1379,10 @@ h5 {
 
 .max-h-\[500px\] {
   max-height: 500px;
+}
+
+.max-h-\[600px\] {
+  max-height: 600px;
 }
 
 .min-h-full {
@@ -1438,6 +1484,10 @@ h5 {
 
 .shrink-0 {
   flex-shrink: 0;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 .table-auto {
@@ -1550,6 +1600,10 @@ h5 {
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -1669,6 +1723,10 @@ h5 {
   border-radius: 0.375rem;
 }
 
+.rounded-none {
+  border-radius: 0px;
+}
+
 .rounded-t-lg {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
@@ -1718,6 +1776,14 @@ h5 {
 
 .border-b-2 {
   border-bottom-width: 2px;
+}
+
+.border-l {
+  border-left-width: 1px;
+}
+
+.border-r {
+  border-right-width: 1px;
 }
 
 .border-dashed {
@@ -1771,6 +1837,16 @@ h5 {
 .border-b-table-border {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(60 69 71 / var(--tw-border-opacity));
+}
+
+.border-l-table-border {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(60 69 71 / var(--tw-border-opacity));
+}
+
+.border-r-table-border {
+  --tw-border-opacity: 1;
+  border-right-color: rgb(60 69 71 / var(--tw-border-opacity));
 }
 
 .bg-\[\#2C3638\] {
@@ -2043,8 +2119,28 @@ h5 {
   padding-bottom: 1.5rem;
 }
 
+.pl-0 {
+  padding-left: 0px;
+}
+
+.pl-1 {
+  padding-left: 0.25rem;
+}
+
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
 .pl-8 {
   padding-left: 2rem;
+}
+
+.pl-\[2px\] {
+  padding-left: 2px;
+}
+
+.pr-0 {
+  padding-right: 0px;
 }
 
 .pr-12 {
@@ -2059,8 +2155,16 @@ h5 {
   padding-right: 2rem;
 }
 
+.pr-\[10px\] {
+  padding-right: 10px;
+}
+
 .pr-\[6px\] {
   padding-right: 6px;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
 }
 
 .pt-4 {
@@ -2853,6 +2957,10 @@ table tr td:first-child {
 
   .sm\:gap-2 {
     gap: 0.5rem;
+  }
+
+  .sm\:gap-0 {
+    gap: 0px;
   }
 
   .sm\:p-3 {
