@@ -1064,6 +1064,10 @@ h5 {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .-bottom-5 {
   bottom: -1.25rem;
 }
@@ -2375,6 +2379,23 @@ table tr td:last-child {
 
 table tr td:first-child {
   border-radius: 10px 0 0 10px;
+}
+
+thead {
+  position: sticky;
+  top: 0px;
+  background: #1a2427;
+  z-index: 10;
+}
+
+thead::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: #3c4547;
+  content: '';
 }
 
 /* Scrollbar */
