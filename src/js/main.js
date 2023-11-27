@@ -57,14 +57,15 @@ function toggleModal(btnId, modalId, closeBtnId) {
 		body.classList.toggle('overflow-hidden')
 	})
 }
-if (document.querySelector('.modal')) {
+if (document.querySelector('#create-tournament-modal')) {
 	// Tournament Modal
 	toggleModal(
 		'create-tournament-btn',
 		'create-tournament-modal',
 		'create-tournament-close-btn'
 	)
-
+}
+if (document.querySelector('#account-settings-modal')) {
 	// Account Setting Modal
 	toggleModal(
 		'account-settings-btn',
@@ -72,3 +73,20 @@ if (document.querySelector('.modal')) {
 		'account-settings-close-btn'
 	)
 }
+
+// Add User Tournament Modal
+function toggleAddUserTournamentModal() {
+	const modal = document.getElementById('user-tournament-modal')
+	const btn = document.getElementById('create-user-tournament-btn')
+	const close = document.getElementById('user-tournament-close')
+
+	btn.addEventListener('click', () => {
+		modal.classList.remove('hidden')
+		modal.classList.add('block')
+	})
+	close.addEventListener('click', () => {
+		modal.classList.add('hidden')
+		modal.classList.remove('block')
+	})
+}
+toggleAddUserTournamentModal()

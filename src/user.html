@@ -231,7 +231,7 @@
 						<p class="market-status closed">Market Closed</p>
 					</div>
 
-					<div class="border-b border-b-[#3C4547] py-[18px] sm:py-2">
+					<div class="relative border-b border-b-[#3C4547] py-[18px] sm:py-2">
 						<div class="flex gap-4 sm:flex-wrap sm:gap-1">
 							<button class="tournament-button active">
 								<img
@@ -257,6 +257,195 @@
 								/>
 								<span>Wimbledon (M)</span>
 							</button>
+							<button
+								id="create-user-tournament-btn"
+								class="ml-auto flex h-[54px] w-[54px] items-center justify-center rounded-lg border border-transparent bg-darkgrey p-[18px] text-xl hover:border-lightgreen sm:h-5 sm:w-5"
+							>
+								<span>+</span>
+							</button>
+
+							<!-- Modal -->
+							<div
+								id="user-tournament-modal"
+								class="absolute right-0 top-full z-20 -mt-2 hidden w-[732px] rounded-lg border border-table-border bg-darkgrey px-6 pb-6 pt-5 md:w-full"
+							>
+								<p class="text-body-lg-m py-4 px-6 pb-3 text-center">
+									Add Tournaments
+								</p>
+
+								<!-- Close Button -->
+								<button
+									id="user-tournament-close"
+									class="group absolute right-3 top-3"
+								>
+									<svg
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<circle cx="12" cy="12" r="12" fill="#313A3D" />
+										<path
+											class="transition-colors group-hover:fill-lightgreen"
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M16.7891 8.02444C17.0234 7.79013 17.0234 7.41023 16.7891 7.17591C16.5548 6.9416 16.1749 6.9416 15.9406 7.17591L11.9826 11.1339L8.02446 7.17579C7.79014 6.94147 7.41025 6.94147 7.17593 7.17579C6.94162 7.4101 6.94162 7.79 7.17593 8.02431L11.1342 11.9826L7.17593 15.9409C6.94162 16.1753 6.94162 16.5552 7.17593 16.7895C7.41024 17.0238 7.79014 17.0238 8.02446 16.7895L11.9825 12.8315L15.9406 16.7896C16.1749 17.0239 16.5548 17.0239 16.7891 16.7896C17.0234 16.5553 17.0234 16.1754 16.7891 15.9411L12.8308 11.9828L16.7891 8.02444Z"
+											fill="#A8ABAD"
+										/>
+									</svg>
+								</button>
+
+								<!-- Tournaments Grid -->
+								<div
+									class="grid grid-cols-3 overflow-hidden rounded-lg border border-table-border"
+								>
+									<!-- Add Tournament Button -->
+									<label
+										class="add-tournament-button border-b border-r border-table-border"
+										for="tournament-1"
+									>
+										<div class="flex items-center gap-2">
+											<div
+												class="h-[30px] w-[30px] shrink-0 overflow-hidden rounded-full"
+											>
+												<img src="./img/global/wimbledon.png" alt="img" />
+											</div>
+											<div class="flex flex-col gap-1">
+												<p class="text-body-xs-medium sm:text-body-x uppercase">
+													2024 nba playoffs
+												</p>
+												<p class="text-body-xs text-greytext">Apr 20 - Jun 6</p>
+											</div>
+										</div>
+										<input
+											class="absolute right-2 bottom-2 hidden rounded-full checked:block"
+											type="checkbox"
+											id="tournament-1"
+										/>
+									</label>
+
+									<!-- Add Tournament Button -->
+									<label
+										class="add-tournament-button border-b border-r border-table-border"
+										for="tournament-2"
+									>
+										<div class="flex items-center gap-2">
+											<div
+												class="h-[30px] w-[30px] shrink-0 overflow-hidden rounded-full"
+											>
+												<img src="./img/global/wimbledon.png" alt="img" />
+											</div>
+											<div class="flex flex-col gap-1">
+												<p class="text-body-xs-medium sm:text-body-x uppercase">
+													2024 nba playoffs
+												</p>
+												<p class="text-body-xs text-greytext">Apr 20 - Jun 6</p>
+											</div>
+										</div>
+										<input
+											class="absolute right-2 bottom-2 hidden rounded-full checked:block"
+											type="checkbox"
+											id="tournament-2"
+										/>
+									</label>
+
+									<!-- Add Tournament Button -->
+									<label
+										class="add-tournament-button border-b border-table-border"
+										for="tournament-3"
+									>
+										<div class="flex items-center gap-2">
+											<div
+												class="h-[30px] w-[30px] shrink-0 overflow-hidden rounded-full"
+											>
+												<img src="./img/global/wimbledon.png" alt="img" />
+											</div>
+											<div class="flex flex-col gap-1">
+												<p class="text-body-xs-medium sm:text-body-x uppercase">
+													2024 nba playoffs
+												</p>
+												<p class="text-body-xs text-greytext">Apr 20 - Jun 6</p>
+											</div>
+										</div>
+										<input
+											class="absolute right-2 bottom-2 hidden rounded-full checked:block"
+											type="checkbox"
+											id="tournament-3"
+										/>
+									</label>
+
+									<!-- Add Tournament Button -->
+									<label
+										class="add-tournament-button border-r border-table-border"
+										for="tournament-4"
+									>
+										<div class="flex items-center gap-2">
+											<div
+												class="h-[30px] w-[30px] shrink-0 overflow-hidden rounded-full"
+											>
+												<img src="./img/global/wimbledon.png" alt="img" />
+											</div>
+											<div class="flex flex-col gap-1">
+												<p class="text-body-xs-medium sm:text-body-x uppercase">
+													2024 nba playoffs
+												</p>
+												<p class="text-body-xs text-greytext">Apr 20 - Jun 6</p>
+											</div>
+										</div>
+										<input
+											class="absolute right-2 bottom-2 hidden rounded-full checked:block"
+											type="checkbox"
+											id="tournament-4"
+										/>
+									</label>
+									<!-- Add Tournament Button -->
+									<label
+										class="add-tournament-button border-r border-table-border"
+										for="tournament-5"
+									>
+										<div class="flex items-center gap-2">
+											<div
+												class="h-[30px] w-[30px] shrink-0 overflow-hidden rounded-full"
+											>
+												<img src="./img/global/wimbledon.png" alt="img" />
+											</div>
+											<div class="flex flex-col gap-1">
+												<p class="text-body-xs-medium sm:text-body-x uppercase">
+													2024 nba playoffs
+												</p>
+												<p class="text-body-xs text-greytext">Apr 20 - Jun 6</p>
+											</div>
+										</div>
+										<input
+											class="absolute right-2 bottom-2 hidden rounded-full checked:block"
+											type="checkbox"
+											id="tournament-5"
+										/>
+									</label>
+									<!-- Add Tournament Button -->
+									<label class="add-tournament-button" for="tournament-6">
+										<div class="flex items-center gap-2">
+											<div
+												class="h-[30px] w-[30px] shrink-0 overflow-hidden rounded-full"
+											>
+												<img src="./img/global/wimbledon.png" alt="img" />
+											</div>
+											<div class="flex flex-col gap-1">
+												<p class="text-body-xs-medium sm:text-body-x uppercase">
+													2024 nba playoffs
+												</p>
+												<p class="text-body-xs text-greytext">Apr 20 - Jun 6</p>
+											</div>
+										</div>
+										<input
+											class="absolute right-2 bottom-2 hidden rounded-full checked:block"
+											type="checkbox"
+											id="tournament-6"
+										/>
+									</label>
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -2161,336 +2350,6 @@
 				</section>
 			</main>
 		</div>
-
-		<!-- [START] Create Tournament Modal -->
-		<div
-			id="create-tournament-modal"
-			class="modal fixed left-0 top-0 z-10 hidden h-screen w-screen justify-center bg-black/60 pt-[52px]"
-		>
-			<!-- Modal -->
-			<div
-				class="relative mx-auto h-[700px] max-w-[528px] rounded-md bg-darkgrey p-6 pr-3"
-			>
-				<!-- Modal Content  -->
-				<div class="flex h-full flex-col">
-					<p class="text-body-lg-m text-center">Create Tournament</p>
-
-					<div class="mt-6 flex h-full gap-6 sm:flex-col">
-						<div class="relative h-[100px] w-[100px] shrink-0 rounded-lg">
-							<img src="./img/global/photo-bg.svg" alt="img" />
-							<img
-								class="absolute left-1/2 top-1/2 h-[56px] w-[56px] -translate-x-1/2 -translate-y-1/2"
-								src="./img/global/photo-icon.svg"
-								alt="img"
-							/>
-							<button class="absolute left-1/2 -bottom-5 -translate-x-1/2">
-								<img src="./img/global/set-photo.svg" alt="img" />
-							</button>
-						</div>
-						<div class="h-full w-full">
-							<form action="#" class="flex h-full flex-col gap-3">
-								<label class="input-label pr-3" for="name">
-									<p class="text-body-m text-greytext">Tournament Name</p>
-									<input
-										id="name"
-										name="name"
-										type="text"
-										class="input-small p-3"
-									/>
-								</label>
-
-								<label class="input-label pr-3" for="limit">
-									<p class="text-body-m text-greytext">Position Limit</p>
-									<input
-										id="limit"
-										name="limit"
-										type="text"
-										class="input-small p-3"
-									/>
-								</label>
-
-								<div class="pr-3">
-									<hr
-										class="my-3 block h-[1px] w-full border-none bg-table-border"
-									/>
-								</div>
-
-								<label
-									class="input-label flex-row items-center gap-5 pr-3"
-									for="new-team"
-								>
-									<p class="text-body-m text-greytext">Teams</p>
-									<input
-										id="new-team"
-										name="new-team"
-										type="text"
-										class="input-small pr-12"
-									/>
-									<button
-										class="absolute top-[3px] right-[15px] ml-auto flex h-[30px] w-[30px] items-center justify-center rounded-md border border-transparent bg-[#2C3638] p-[7px] text-xl hover:border-lightgreen"
-									>
-										<span>+</span>
-									</button>
-								</label>
-
-								<!-- Results -->
-								<div class="max-h-[284px] overflow-y-auto py-2 pr-3">
-									<ul class="flex flex-col gap-1">
-										<li
-											class="flex justify-between rounded-md bg-lightgrey py-2 px-3"
-										>
-											<span class="text-body-s">UVA</span>
-											<button class="group">
-												<svg
-													width="12"
-													height="12"
-													viewBox="0 0 12 12"
-													fill="none"
-													xmlns="http://www.w3.org/2000/svg"
-												>
-													<path
-														class="transition-colors group-hover:fill-lightgreen"
-														fill-rule="evenodd"
-														clip-rule="evenodd"
-														d="M10.7891 2.02444C11.0234 1.79013 11.0234 1.41023 10.7891 1.17591C10.5548 0.9416 10.1749 0.9416 9.94058 1.17591L5.98258 5.13391L2.02446 1.17579C1.79014 0.941471 1.41025 0.941472 1.17593 1.17579C0.941616 1.4101 0.941616 1.79 1.17593 2.02431L5.13424 5.98263L1.17593 9.94094C0.941616 10.1753 0.941616 10.5552 1.17593 10.7895C1.41024 11.0238 1.79014 11.0238 2.02446 10.7895L5.98245 6.83147L9.94058 10.7896C10.1749 11.0239 10.5548 11.0239 10.7891 10.7896C11.0234 10.5553 11.0234 10.1754 10.7891 9.94107L6.83079 5.98276L10.7891 2.02444Z"
-														fill="#A8ABAD"
-													/>
-												</svg>
-											</button>
-										</li>
-										<li
-											class="flex justify-between rounded-md bg-lightgrey py-2 px-3"
-										>
-											<span class="text-body-s">UVA</span>
-											<button class="group">
-												<svg
-													width="12"
-													height="12"
-													viewBox="0 0 12 12"
-													fill="none"
-													xmlns="http://www.w3.org/2000/svg"
-												>
-													<path
-														class="transition-colors group-hover:fill-lightgreen"
-														fill-rule="evenodd"
-														clip-rule="evenodd"
-														d="M10.7891 2.02444C11.0234 1.79013 11.0234 1.41023 10.7891 1.17591C10.5548 0.9416 10.1749 0.9416 9.94058 1.17591L5.98258 5.13391L2.02446 1.17579C1.79014 0.941471 1.41025 0.941472 1.17593 1.17579C0.941616 1.4101 0.941616 1.79 1.17593 2.02431L5.13424 5.98263L1.17593 9.94094C0.941616 10.1753 0.941616 10.5552 1.17593 10.7895C1.41024 11.0238 1.79014 11.0238 2.02446 10.7895L5.98245 6.83147L9.94058 10.7896C10.1749 11.0239 10.5548 11.0239 10.7891 10.7896C11.0234 10.5553 11.0234 10.1754 10.7891 9.94107L6.83079 5.98276L10.7891 2.02444Z"
-														fill="#A8ABAD"
-													/>
-												</svg>
-											</button>
-										</li>
-										<li
-											class="flex justify-between rounded-md bg-lightgrey py-2 px-3"
-										>
-											<span class="text-body-s">UVA</span>
-											<button class="group">
-												<svg
-													width="12"
-													height="12"
-													viewBox="0 0 12 12"
-													fill="none"
-													xmlns="http://www.w3.org/2000/svg"
-												>
-													<path
-														class="transition-colors group-hover:fill-lightgreen"
-														fill-rule="evenodd"
-														clip-rule="evenodd"
-														d="M10.7891 2.02444C11.0234 1.79013 11.0234 1.41023 10.7891 1.17591C10.5548 0.9416 10.1749 0.9416 9.94058 1.17591L5.98258 5.13391L2.02446 1.17579C1.79014 0.941471 1.41025 0.941472 1.17593 1.17579C0.941616 1.4101 0.941616 1.79 1.17593 2.02431L5.13424 5.98263L1.17593 9.94094C0.941616 10.1753 0.941616 10.5552 1.17593 10.7895C1.41024 11.0238 1.79014 11.0238 2.02446 10.7895L5.98245 6.83147L9.94058 10.7896C10.1749 11.0239 10.5548 11.0239 10.7891 10.7896C11.0234 10.5553 11.0234 10.1754 10.7891 9.94107L6.83079 5.98276L10.7891 2.02444Z"
-														fill="#A8ABAD"
-													/>
-												</svg>
-											</button>
-										</li>
-										<li
-											class="flex justify-between rounded-md bg-lightgrey py-2 px-3"
-										>
-											<span class="text-body-s">UVA</span>
-											<button class="group">
-												<svg
-													width="12"
-													height="12"
-													viewBox="0 0 12 12"
-													fill="none"
-													xmlns="http://www.w3.org/2000/svg"
-												>
-													<path
-														class="transition-colors group-hover:fill-lightgreen"
-														fill-rule="evenodd"
-														clip-rule="evenodd"
-														d="M10.7891 2.02444C11.0234 1.79013 11.0234 1.41023 10.7891 1.17591C10.5548 0.9416 10.1749 0.9416 9.94058 1.17591L5.98258 5.13391L2.02446 1.17579C1.79014 0.941471 1.41025 0.941472 1.17593 1.17579C0.941616 1.4101 0.941616 1.79 1.17593 2.02431L5.13424 5.98263L1.17593 9.94094C0.941616 10.1753 0.941616 10.5552 1.17593 10.7895C1.41024 11.0238 1.79014 11.0238 2.02446 10.7895L5.98245 6.83147L9.94058 10.7896C10.1749 11.0239 10.5548 11.0239 10.7891 10.7896C11.0234 10.5553 11.0234 10.1754 10.7891 9.94107L6.83079 5.98276L10.7891 2.02444Z"
-														fill="#A8ABAD"
-													/>
-												</svg>
-											</button>
-										</li>
-										<li
-											class="flex justify-between rounded-md bg-lightgrey py-2 px-3"
-										>
-											<span class="text-body-s">UVA</span>
-											<button class="group">
-												<svg
-													width="12"
-													height="12"
-													viewBox="0 0 12 12"
-													fill="none"
-													xmlns="http://www.w3.org/2000/svg"
-												>
-													<path
-														class="transition-colors group-hover:fill-lightgreen"
-														fill-rule="evenodd"
-														clip-rule="evenodd"
-														d="M10.7891 2.02444C11.0234 1.79013 11.0234 1.41023 10.7891 1.17591C10.5548 0.9416 10.1749 0.9416 9.94058 1.17591L5.98258 5.13391L2.02446 1.17579C1.79014 0.941471 1.41025 0.941472 1.17593 1.17579C0.941616 1.4101 0.941616 1.79 1.17593 2.02431L5.13424 5.98263L1.17593 9.94094C0.941616 10.1753 0.941616 10.5552 1.17593 10.7895C1.41024 11.0238 1.79014 11.0238 2.02446 10.7895L5.98245 6.83147L9.94058 10.7896C10.1749 11.0239 10.5548 11.0239 10.7891 10.7896C11.0234 10.5553 11.0234 10.1754 10.7891 9.94107L6.83079 5.98276L10.7891 2.02444Z"
-														fill="#A8ABAD"
-													/>
-												</svg>
-											</button>
-										</li>
-										<li
-											class="flex justify-between rounded-md bg-lightgrey py-2 px-3"
-										>
-											<span class="text-body-s">UVA</span>
-											<button class="group">
-												<svg
-													width="12"
-													height="12"
-													viewBox="0 0 12 12"
-													fill="none"
-													xmlns="http://www.w3.org/2000/svg"
-												>
-													<path
-														class="transition-colors group-hover:fill-lightgreen"
-														fill-rule="evenodd"
-														clip-rule="evenodd"
-														d="M10.7891 2.02444C11.0234 1.79013 11.0234 1.41023 10.7891 1.17591C10.5548 0.9416 10.1749 0.9416 9.94058 1.17591L5.98258 5.13391L2.02446 1.17579C1.79014 0.941471 1.41025 0.941472 1.17593 1.17579C0.941616 1.4101 0.941616 1.79 1.17593 2.02431L5.13424 5.98263L1.17593 9.94094C0.941616 10.1753 0.941616 10.5552 1.17593 10.7895C1.41024 11.0238 1.79014 11.0238 2.02446 10.7895L5.98245 6.83147L9.94058 10.7896C10.1749 11.0239 10.5548 11.0239 10.7891 10.7896C11.0234 10.5553 11.0234 10.1754 10.7891 9.94107L6.83079 5.98276L10.7891 2.02444Z"
-														fill="#A8ABAD"
-													/>
-												</svg>
-											</button>
-										</li>
-										<li
-											class="flex justify-between rounded-md bg-lightgrey py-2 px-3"
-										>
-											<span class="text-body-s">UVA</span>
-											<button class="group">
-												<svg
-													width="12"
-													height="12"
-													viewBox="0 0 12 12"
-													fill="none"
-													xmlns="http://www.w3.org/2000/svg"
-												>
-													<path
-														class="transition-colors group-hover:fill-lightgreen"
-														fill-rule="evenodd"
-														clip-rule="evenodd"
-														d="M10.7891 2.02444C11.0234 1.79013 11.0234 1.41023 10.7891 1.17591C10.5548 0.9416 10.1749 0.9416 9.94058 1.17591L5.98258 5.13391L2.02446 1.17579C1.79014 0.941471 1.41025 0.941472 1.17593 1.17579C0.941616 1.4101 0.941616 1.79 1.17593 2.02431L5.13424 5.98263L1.17593 9.94094C0.941616 10.1753 0.941616 10.5552 1.17593 10.7895C1.41024 11.0238 1.79014 11.0238 2.02446 10.7895L5.98245 6.83147L9.94058 10.7896C10.1749 11.0239 10.5548 11.0239 10.7891 10.7896C11.0234 10.5553 11.0234 10.1754 10.7891 9.94107L6.83079 5.98276L10.7891 2.02444Z"
-														fill="#A8ABAD"
-													/>
-												</svg>
-											</button>
-										</li>
-										<li
-											class="flex justify-between rounded-md bg-lightgrey py-2 px-3"
-										>
-											<span class="text-body-s">UVA</span>
-											<button class="group">
-												<svg
-													width="12"
-													height="12"
-													viewBox="0 0 12 12"
-													fill="none"
-													xmlns="http://www.w3.org/2000/svg"
-												>
-													<path
-														class="transition-colors group-hover:fill-lightgreen"
-														fill-rule="evenodd"
-														clip-rule="evenodd"
-														d="M10.7891 2.02444C11.0234 1.79013 11.0234 1.41023 10.7891 1.17591C10.5548 0.9416 10.1749 0.9416 9.94058 1.17591L5.98258 5.13391L2.02446 1.17579C1.79014 0.941471 1.41025 0.941472 1.17593 1.17579C0.941616 1.4101 0.941616 1.79 1.17593 2.02431L5.13424 5.98263L1.17593 9.94094C0.941616 10.1753 0.941616 10.5552 1.17593 10.7895C1.41024 11.0238 1.79014 11.0238 2.02446 10.7895L5.98245 6.83147L9.94058 10.7896C10.1749 11.0239 10.5548 11.0239 10.7891 10.7896C11.0234 10.5553 11.0234 10.1754 10.7891 9.94107L6.83079 5.98276L10.7891 2.02444Z"
-														fill="#A8ABAD"
-													/>
-												</svg>
-											</button>
-										</li>
-										<li
-											class="flex justify-between rounded-md bg-lightgrey py-2 px-3"
-										>
-											<span class="text-body-s">UVA</span>
-											<button class="group">
-												<svg
-													width="12"
-													height="12"
-													viewBox="0 0 12 12"
-													fill="none"
-													xmlns="http://www.w3.org/2000/svg"
-												>
-													<path
-														class="transition-colors group-hover:fill-lightgreen"
-														fill-rule="evenodd"
-														clip-rule="evenodd"
-														d="M10.7891 2.02444C11.0234 1.79013 11.0234 1.41023 10.7891 1.17591C10.5548 0.9416 10.1749 0.9416 9.94058 1.17591L5.98258 5.13391L2.02446 1.17579C1.79014 0.941471 1.41025 0.941472 1.17593 1.17579C0.941616 1.4101 0.941616 1.79 1.17593 2.02431L5.13424 5.98263L1.17593 9.94094C0.941616 10.1753 0.941616 10.5552 1.17593 10.7895C1.41024 11.0238 1.79014 11.0238 2.02446 10.7895L5.98245 6.83147L9.94058 10.7896C10.1749 11.0239 10.5548 11.0239 10.7891 10.7896C11.0234 10.5553 11.0234 10.1754 10.7891 9.94107L6.83079 5.98276L10.7891 2.02444Z"
-														fill="#A8ABAD"
-													/>
-												</svg>
-											</button>
-										</li>
-										<li
-											class="flex justify-between rounded-md bg-lightgrey py-2 px-3"
-										>
-											<span class="text-body-s">UVA</span>
-											<button class="group">
-												<svg
-													width="12"
-													height="12"
-													viewBox="0 0 12 12"
-													fill="none"
-													xmlns="http://www.w3.org/2000/svg"
-												>
-													<path
-														class="transition-colors group-hover:fill-lightgreen"
-														fill-rule="evenodd"
-														clip-rule="evenodd"
-														d="M10.7891 2.02444C11.0234 1.79013 11.0234 1.41023 10.7891 1.17591C10.5548 0.9416 10.1749 0.9416 9.94058 1.17591L5.98258 5.13391L2.02446 1.17579C1.79014 0.941471 1.41025 0.941472 1.17593 1.17579C0.941616 1.4101 0.941616 1.79 1.17593 2.02431L5.13424 5.98263L1.17593 9.94094C0.941616 10.1753 0.941616 10.5552 1.17593 10.7895C1.41024 11.0238 1.79014 11.0238 2.02446 10.7895L5.98245 6.83147L9.94058 10.7896C10.1749 11.0239 10.5548 11.0239 10.7891 10.7896C11.0234 10.5553 11.0234 10.1754 10.7891 9.94107L6.83079 5.98276L10.7891 2.02444Z"
-														fill="#A8ABAD"
-													/>
-												</svg>
-											</button>
-										</li>
-									</ul>
-								</div>
-
-								<button class="btn btn-small mt-auto flex" type="submit">
-									Create
-								</button>
-							</form>
-						</div>
-					</div>
-				</div>
-				<!-- Close Btn -->
-				<button
-					id="create-tournament-close-btn"
-					class="group absolute right-3 top-3"
-				>
-					<svg
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<circle cx="12" cy="12" r="12" fill="#313A3D" />
-						<path
-							class="transition-colors group-hover:fill-lightgreen"
-							fill-rule="evenodd"
-							clip-rule="evenodd"
-							d="M16.7891 8.02444C17.0234 7.79013 17.0234 7.41023 16.7891 7.17591C16.5548 6.9416 16.1749 6.9416 15.9406 7.17591L11.9826 11.1339L8.02446 7.17579C7.79014 6.94147 7.41025 6.94147 7.17593 7.17579C6.94162 7.4101 6.94162 7.79 7.17593 8.02431L11.1342 11.9826L7.17593 15.9409C6.94162 16.1753 6.94162 16.5552 7.17593 16.7895C7.41024 17.0238 7.79014 17.0238 8.02446 16.7895L11.9825 12.8315L15.9406 16.7896C16.1749 17.0239 16.5548 17.0239 16.7891 16.7896C17.0234 16.5553 17.0234 16.1754 16.7891 15.9411L12.8308 11.9828L16.7891 8.02444Z"
-							fill="#A8ABAD"
-						/>
-					</svg>
-				</button>
-			</div>
-		</div>
-		<!-- [END] Create Tournament Modal -->
 
 		<!-- [START] Account Settings Modal -->
 		<div

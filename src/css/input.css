@@ -127,6 +127,9 @@ body {
 	.tournament-button.active {
 		@apply border-lightgreen;
 	}
+	.add-tournament-button {
+		@apply relative cursor-pointer  p-[14px] transition-colors hover:bg-lightgrey;
+	}
 
 	/* Live Table Row */
 	.live-row {
