@@ -90,3 +90,15 @@ function toggleAddUserTournamentModal() {
 	})
 }
 toggleAddUserTournamentModal()
+
+// Lock Button
+function toggleLockButton() {
+	const btn = document.querySelector('.lock-button')
+	const table = document.querySelector('.order-book-table')
+
+	btn.addEventListener('click', () => {
+		btn.classList.toggle('active')
+		table.classList.toggle('active')
+	})
+}
+toggleLockButton()

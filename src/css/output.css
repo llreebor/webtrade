@@ -834,6 +834,23 @@ h5 {
   background-color: rgb(243 52 76 / var(--tw-bg-opacity));
 }
 
+/* Lock Button */
+
+.order-book-table.active {
+  position: relative;
+}
+
+.order-book-table.active::after {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 30;
+  height: 100%;
+  width: 100%;
+  content: var(--tw-content);
+  background-color: rgb(26 36 39 / 0.75);
+}
+
 /* Form Items */
 
 .input-label {
@@ -2658,6 +2675,14 @@ thead::after {
 .group:hover .group-hover\:text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.group.active .group-\[\.active\]\:block {
+  display: block;
+}
+
+.group.active .group-\[\.active\]\:hidden {
+  display: none;
 }
 
 .group.active .group-\[\.active\]\:-translate-y-\[10px\] {

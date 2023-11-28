@@ -98,6 +98,11 @@ body {
 		@apply bg-lightred transition-colors hover:bg-lightred-hovered;
 	}
 
+	/* Lock Button */
+	.order-book-table.active {
+		@apply relative after:absolute after:left-0 after:top-0 after:z-30 after:h-full after:w-full after:bg-darkgrey/75;
+	}
+
 	/* Form Items */
 	.input-label {
 		@apply relative flex w-full flex-col gap-1;
