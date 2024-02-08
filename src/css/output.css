@@ -630,7 +630,6 @@ h5 {
 option {
   --tw-bg-opacity: 1;
   background-color: rgb(26 36 39 / var(--tw-bg-opacity));
-  padding: 0.5rem;
 }
 
 *, ::before, ::after {

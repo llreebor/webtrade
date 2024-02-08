@@ -33,7 +33,7 @@ body {
 	}
 
 	option {
-		@apply bg-darkgrey p-2;
+		@apply bg-darkgrey;
 	}
 }
 
