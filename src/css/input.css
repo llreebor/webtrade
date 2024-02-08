@@ -33,7 +33,7 @@ body {
 	}
 	select,
 	option {
-		@apply bg-stone-700;
+		@apply bg-main-black;
 	}
 }
 
