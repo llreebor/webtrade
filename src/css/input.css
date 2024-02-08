@@ -31,6 +31,10 @@ body {
 	h5 {
 		@apply text-xl font-medium leading-[24px];
 	}
+	select,
+	option {
+		@apply bg-stone-700;
+	}
 }
 
 @layer components {

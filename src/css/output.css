@@ -627,6 +627,12 @@ h5 {
   line-height: 24px;
 }
 
+select,
+	option {
+  --tw-bg-opacity: 1;
+  background-color: rgb(68 64 60 / var(--tw-bg-opacity));
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
