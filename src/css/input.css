@@ -31,9 +31,9 @@ body {
 	h5 {
 		@apply text-xl font-medium leading-[24px];
 	}
-	select,
+
 	option {
-		@apply bg-main-black;
+		@apply bg-darkgrey p-2;
 	}
 }
 
