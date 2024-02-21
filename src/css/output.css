@@ -1466,8 +1466,28 @@ option {
   max-height: 600px;
 }
 
+.max-h-\[400px\] {
+  max-height: 400px;
+}
+
+.max-h-\[650px\] {
+  max-height: 650px;
+}
+
+.max-h-\[700px\] {
+  max-height: 700px;
+}
+
 .min-h-full {
   min-height: 100%;
+}
+
+.min-h-\[600px\] {
+  min-height: 600px;
+}
+
+.min-h-\[400px\] {
+  min-height: 400px;
 }
 
 .w-10 {
@@ -1778,6 +1798,10 @@ option {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-scroll {
+  overflow: scroll;
 }
 
 .overflow-y-auto {
@@ -2251,6 +2275,10 @@ option {
 
 .pt-\[52px\] {
   padding-top: 52px;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
 }
 
 .text-left {
